@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://joony.github.io/casa-golden/",
+  "homepage": "https://casagolden2026-afk.github.io/casa-golden/",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
