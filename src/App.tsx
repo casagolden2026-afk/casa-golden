@@ -7,8 +7,7 @@ function App() {
       <header className="header">
         <div className="header-container">
           <div className="logo-section">
-            <img src="/casa-golden/logo/logo.png" alt="Casa Golden Logo" className="logo-img" />
-            <span className="logo-text">Casa Golden</span>
+            <img src="/casa-golden/logo/logo.png" alt="Casa Golden" className="logo-img" />
           </div>
           <nav>
             <ul className="nav-links">
