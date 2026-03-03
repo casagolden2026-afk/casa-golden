@@ -1,7 +1,7 @@
 /* Header */
 .header {
   width: 100%;
-  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  background: linear-gradient(135deg, #101010 0%, #303030 100%);
   padding: 1.5rem 0;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   position: sticky;
@@ -33,7 +33,7 @@
 .logo-text {
   font-size: 1.5rem;
   font-weight: 700;
-  color: #2c3e50;
+  color: #fafafa;
   letter-spacing: 0.05em;
 }
 
@@ -47,7 +47,7 @@
 
 .nav-links a {
   text-decoration: none;
-  color: #34495e;
+  color: #ffffff;
   font-weight: 500;
   transition: color 0.3s ease;
   font-size: 0.95rem;

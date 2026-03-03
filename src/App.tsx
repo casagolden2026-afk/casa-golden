@@ -33,11 +33,11 @@ function App() {
       <main className="main-content">
         {/* Welcome Section */}
         <section className="welcome-section">
-          <h2>환영합니다</h2>
           <p>
             Casa Golden은 고객님께 최고 수준의 숙박 경험을 제공하기 위해 준비된 프리미엄 숙소입니다.
             현대적인 시설과 따뜻한 서비스로 여러분의 특별한 시간을 만들어드리겠습니다.
           </p>
+          <h2>환영합니다</h2>
         </section>
 
         {/* Features */}
@@ -66,7 +66,7 @@ function App() {
 
         {/* CTA */}
         <div style={{ textAlign: 'center', margin: '2rem 0' }}>
-          <button className="cta-button" onClick={() => alert('예약 페이지로 이동합니다')}>
+          <button className="cta-button" onClick={() => window.location.href = 'https://airbnb.com/h/casa-golden'}>
             지금 예약하기
           </button>
         </div>
@@ -75,7 +75,7 @@ function App() {
       {/* Footer */}
       <footer className="footer" id="contact">
         <p>&copy; 2026 Casa Golden. 모든 권리 보유.</p>
-        <p>문의: info@casagolden.com | 전화: 010-XXXX-XXXX</p>
+        <p>문의: https://airbnb.com/h/casa-golden | airbnb message</p>
       </footer>
     </div>
   )
