@@ -21,7 +21,8 @@ export function LanguageModal({ isOpen, onClose }: LanguageModalProps) {
 
   const handleLanguageChange = (langCode: string) => {
     i18n.changeLanguage(langCode)
-    localStorage.setItem('language', langCode)
+    // 사용자가 명시적으로 선택한 언어만 저장
+    localStorage.setItem('userLanguageSelected', langCode)
     onClose()
   }
 
