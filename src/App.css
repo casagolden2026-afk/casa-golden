@@ -157,18 +157,15 @@ body {
   width: 100%;
 }
 
-/* Info Section */
-.info-section {
+/* Location Section */
+.location-section {
   margin-bottom: 2.5rem;
-  padding: 1.5rem;
-  background: #f8f9fa;
-  border-radius: 8px;
 }
 
-.info-section h2 {
+.location-section h2 {
   font-size: clamp(1.3rem, 5vw, 1.8rem);
   color: #2c3e50;
-  margin: 0 0 1rem 0;
+  margin: 0 0 1.5rem 0;
   border-bottom: 3px solid #F4C430;
   padding-bottom: 0.5rem;
   font-family: 'Poppins', sans-serif;
@@ -176,19 +173,60 @@ body {
   letter-spacing: -0.01em;
 }
 
+/* Location Summary Grid */
+.location-summary {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+/* Location Subsection Cards */
+.location-subsection {
+  background: linear-gradient(135deg, #ffffff 0%, #fafafa 100%);
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e8e8e8;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 1.5rem;
+}
+
+.location-subsection:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 16px rgba(244, 196, 48, 0.2);
+}
+
+.location-subsection h3 {
+  font-size: 1.15rem;
+  color: #2c3e50;
+  margin: 0 0 1rem 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #F4C430;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+
 .info-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 1rem;
-  margin-top: 1rem;
+  margin-bottom: 2rem;
 }
 
 .info-item {
-  background: white;
-  padding: 1rem;
-  border-radius: 6px;
+  background: linear-gradient(135deg, #ffffff 0%, #fafafa 100%);
+  padding: 1.2rem;
+  border-radius: 8px;
   text-align: center;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e8e8e8;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 16px rgba(244, 196, 48, 0.2);
 }
 
 .info-item strong {
@@ -222,33 +260,38 @@ body {
   border-bottom: none;
 }
 
-/* Subway Section */
-.subway-section {
-  margin-bottom: 2.5rem;
-  padding: 1.5rem;
-  background: #f8f9fa;
-  border-radius: 8px;
+.location-subsection .amenities-list {
+  margin: 0;
 }
 
-.subway-section h2 {
-  font-size: clamp(1.3rem, 5vw, 1.8rem);
-  color: #2c3e50;
-  margin: 0 0 0.5rem 0;
-  border-bottom: 3px solid #F4C430;
-  padding-bottom: 0.5rem;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 600;
-  letter-spacing: -0.01em;
+.location-subsection .amenities-list li {
+  padding: 0.5rem 0 0.5rem 1.2rem;
+  position: relative;
+  font-size: 0.9rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.location-subsection .amenities-list li:before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #F4C430;
+  font-weight: bold;
+}
+
+.location-subsection .amenities-list li:last-child {
+  border-bottom: none;
 }
 
 .subway-intro {
   color: #666;
   font-size: 0.95rem;
-  margin: 1rem 0;
+  margin: 0 0 1.5rem 0;
   padding: 1rem;
-  background: white;
+  background: linear-gradient(135deg, #fffae5 0%, #fffbf0 100%);
   border-left: 4px solid #F4C430;
   border-radius: 4px;
+  line-height: 1.5;
 }
 
 .subway-grid {
@@ -259,17 +302,18 @@ body {
 }
 
 .subway-item {
-  background: white;
+  background: linear-gradient(135deg, #ffffff 0%, #fafafa 100%);
   padding: 1rem;
   border-radius: 6px;
   text-align: center;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #e8e8e8;
 }
 
 .subway-item:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12);
+  transform: translateY(-4px);
+  box-shadow: 0 4px 16px rgba(244, 196, 48, 0.2);
 }
 
 .subway-item strong {
@@ -309,6 +353,7 @@ body {
   margin: 0;
 }
 
+
 /* Rooms Section */
 .rooms-section {
   margin-bottom: 2.5rem;
@@ -323,6 +368,60 @@ body {
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
   letter-spacing: -0.01em;
+}
+
+/* Facilities Summary */
+.facilities-summary {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.summary-card {
+  background: linear-gradient(135deg, #ffffff 0%, #fafafa 100%);
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e8e8e8;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.summary-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 16px rgba(244, 196, 48, 0.2);
+}
+
+.summary-card h3 {
+  font-size: 1.15rem;
+  color: #2c3e50;
+  margin: 0 0 1rem 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #F4C430;
+  font-weight: 600;
+}
+
+.summary-card .amenities-list {
+  margin: 0;
+}
+
+.summary-card .amenities-list li {
+  padding: 0.5rem 0 0.5rem 1.2rem;
+  position: relative;
+  font-size: 0.9rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.summary-card .amenities-list li:before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #F4C430;
+  font-weight: bold;
+}
+
+.summary-card .amenities-list li:last-child {
+  border-bottom: none;
 }
 
 .room-card {

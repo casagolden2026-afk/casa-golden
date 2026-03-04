@@ -14,11 +14,14 @@ function App() {
     room1: [
       { src: '/casa-golden/image/room_1_01.png', alt: 'Room 1 - 1' },
       { src: '/casa-golden/image/room_1_02.png', alt: 'Room 1 - 2' },
+      { src: '/casa-golden/image/room_1_03.png', alt: 'Room 1 - 3' },
+      { src: '/casa-golden/image/room_1_04.png', alt: 'Room 1 - 4' },
     ],
     room2: [
       { src: '/casa-golden/image/room_2_01.png', alt: 'Room 2 - 1' },
       { src: '/casa-golden/image/room_2_02.jpg', alt: 'Room 2 - 2' },
       { src: '/casa-golden/image/room_2_03.jpg', alt: 'Room 2 - 3' },
+      { src: '/casa-golden/image/room_2_04.png', alt: 'Room 2 - 4' },
     ],
     living: [
       { src: '/casa-golden/image/living_room_01.png', alt: 'Living Room - 1' },
@@ -109,18 +112,6 @@ function App() {
               <li>
                 <ScrollLink
                   to="facilities"
-                  duration={SCROLL_DURATION}
-                  offset={SCROLL_OFFSET}
-                  activeClass="active"
-                  spy={true}
-                  style={{ cursor: 'pointer' }}
-                >
-                  시설
-                </ScrollLink>
-              </li>
-              <li>
-                <ScrollLink
-                  to="rooms"
                   smooth={true}
                   duration={SCROLL_DURATION}
                   offset={SCROLL_OFFSET}
@@ -128,7 +119,7 @@ function App() {
                   spy={true}
                   style={{ cursor: 'pointer' }}
                 >
-                  객실
+                  시설/객실
                 </ScrollLink>
               </li>
             </ul>
@@ -149,8 +140,9 @@ function App() {
       <main className="main-content">
 
         {/* Location Section */}
-        <section className="info-section" id="location">
+        <section className="location-section" id="location">
           <h2>📍 위치</h2>
+
           <div className="info-grid">
             <div className="info-item">
               <strong>홍대입구역</strong>
@@ -165,105 +157,105 @@ function App() {
               <p>철도/버스 이용 편리</p>
             </div>
           </div>
-        </section>
 
-        {/* Surroundings Section */}
-        <section className="info-section">
-          <h2>🏘️ 주변환경</h2>
-          <ul className="amenities-list">
-            <li>조용하고 평화로운 주택가에 위치</li>
-            <li>24시간 편의점 : 도보 1분</li>
-            <li>카페 3곳 : 도보 3분</li>
-            <li>셀프 세탁방 : 도보 1분</li>
-            <li>올리브영 (기념품) : 도보 1분</li>
-          </ul>
-        </section>
-
-        {/* Facilities Section */}
-        <section className="info-section" id="facilities">
-          <h2>🖼️ 편의시설</h2>
-          <ul className="amenities-list">
-            <li>8층 통창으로 즐기는 서울 &amp; 산 뷰</li>
-            <li>엘레베이터</li>
-            <li>무료 짐 보관</li>
-            <li>무료 주차</li>
-            <li>셀프체크인</li>
-          </ul>
-        </section>
-
-        {/* Bedrooms Section */}
-        <section className="info-section">
-          <h2>🛏️ 침실 구성</h2>
-          <ul className="amenities-list">
-            <li>퀸사이즈 침대 2개</li>
-            <li>퀸사이즈 바닥용 매트리스 1개</li>
-          </ul>
-        </section>
-
-        {/* Subway Access Section */}
-        <section className="subway-section">
-          <h2>🚝 홍대입구역에서 주요 관광지까지 이동 시간</h2>
-          <p className="subway-intro">홍대입구역은 서울 교통의 중심이자 에너지가 시작되는 곳에 위치해 있습니다.</p>
-          <div className="subway-grid">
-            <div className="subway-item">
-              <strong>을지로입구역</strong>
-              <span>약 12분</span>
-              <small>2호선 직행</small>
-            </div>
-            <div className="subway-item">
-              <strong>여의도</strong>
-              <span>약 16분</span>
-              <small>2호선 → 9호선 환승</small>
-            </div>
-            <div className="subway-item">
-              <strong>이태원</strong>
-              <span>약 17분</span>
-              <small>공항철도 → 6호선 환승</small>
-            </div>
-            <div className="subway-item">
-              <strong>종로3가</strong>
-              <span>약 20분</span>
-              <small>2호선 → 1호선 환승</small>
-            </div>
-            <div className="subway-item">
-              <strong>동대문</strong>
-              <span>약 20분</span>
-              <small>2호선 → 4호선 환승</small>
-            </div>
-            <div className="subway-item">
-              <strong>경복궁, 안국</strong>
-              <span>약 23분</span>
-              <small>2호선 → 3호선 환승</small>
-            </div>
-            <div className="subway-item">
-              <strong>명동</strong>
-              <span>약 23분</span>
-              <small>2호선 → 4호선/공항선</small>
-            </div>
-            <div className="subway-item">
-              <strong>성수</strong>
-              <span>약 26분</span>
-              <small>2호선 직행</small>
-            </div>
-            <div className="subway-item">
-              <strong>강남(신논현)</strong>
-              <span>약 30분</span>
-              <small>2호선 직행/환승</small>
-            </div>
-            <div className="subway-item">
-              <strong>잠실</strong>
-              <span>약 38분</span>
-              <small>2호선 직행</small>
-            </div>
+          {/* Surroundings Subsection */}
+          <div className="location-subsection">
+            <h3>🏘️ 주변환경</h3>
+            <ul className="amenities-list">
+              <li>조용하고 평화로운 주택가에 위치</li>
+              <li>24시간 편의점 : 도보 1분</li>
+              <li>카페 3곳 : 도보 3분</li>
+              <li>셀프 세탁방 : 도보 1분</li>
+              <li>올리브영 (기념품) : 도보 1분</li>
+            </ul>
           </div>
-          <div className="highlight-box">
-            <p>공항에서 내린 지 1시간 만에 짐을 풀고, 도보 5분 거리의 홍대 메인거리에서 맛집, 술집, 카페, 쇼핑 등 한국의 젊은 문화를 체험하며 커피 한 잔의 여유를 즐길 수 있는 완벽한 여행의 안식처가 될 거예요.</p>
+
+          {/* Subway Access Subsection */}
+          <div className="location-subsection">
+            <h3>🚝 홍대입구역에서 주요 관광지까지 이동 시간</h3>
+            <p className="subway-intro">홍대입구역은 서울 교통의 중심이자 에너지가 시작되는 곳에 위치해 있습니다.</p>
+            <div className="subway-grid">
+              <div className="subway-item">
+                <strong>을지로입구역</strong>
+                <span>약 12분</span>
+                <small>2호선 직행</small>
+              </div>
+              <div className="subway-item">
+                <strong>여의도</strong>
+                <span>약 16분</span>
+                <small>2호선 → 9호선 환승</small>
+              </div>
+              <div className="subway-item">
+                <strong>이태원</strong>
+                <span>약 17분</span>
+                <small>공항철도 → 6호선 환승</small>
+              </div>
+              <div className="subway-item">
+                <strong>종로3가</strong>
+                <span>약 20분</span>
+                <small>2호선 → 1호선 환승</small>
+              </div>
+              <div className="subway-item">
+                <strong>동대문</strong>
+                <span>약 20분</span>
+                <small>2호선 → 4호선 환승</small>
+              </div>
+              <div className="subway-item">
+                <strong>경복궁, 안국</strong>
+                <span>약 23분</span>
+                <small>2호선 → 3호선 환승</small>
+              </div>
+              <div className="subway-item">
+                <strong>명동</strong>
+                <span>약 23분</span>
+                <small>2호선 → 4호선/공항선</small>
+              </div>
+              <div className="subway-item">
+                <strong>성수</strong>
+                <span>약 26분</span>
+                <small>2호선 직행</small>
+              </div>
+              <div className="subway-item">
+                <strong>강남(신논현)</strong>
+                <span>약 30분</span>
+                <small>2호선 직행/환승</small>
+              </div>
+              <div className="subway-item">
+                <strong>잠실</strong>
+                <span>약 38분</span>
+                <small>2호선 직행</small>
+              </div>
+            </div>
+            <div className="highlight-box">
+              <p>공항에서 내린 지 1시간 만에 짐을 풀고, 도보 5분 거리의 홍대 메인거리에서 맛집, 술집, 카페, 쇼핑 등 한국의 젊은 문화를 체험하며 커피 한 잔의 여유를 즐길 수 있는 완벽한 여행의 안식처가 될 거예요.</p>
+            </div>
           </div>
         </section>
 
         {/* Rooms Section */}
-        <section className="rooms-section" id="rooms">
+        <section className="rooms-section" id="facilities">
           <h2>🏠 게스트 이용 가능 공간/시설</h2>
+
+          {/* Facilities Highlights */}
+          <div className="facilities-summary">
+            <div className="summary-card">
+              <h3>🖼️ 편의시설</h3>
+              <ul className="amenities-list">
+                <li>8층 통창으로 즐기는 서울 &amp; 산 뷰</li>
+                <li>엘레베이터</li>
+                <li>무료 짐 보관</li>
+                <li>무료 주차</li>
+                <li>셀프체크인</li>
+              </ul>
+            </div>
+            <div className="summary-card">
+              <h3>🛏️ 침구 구성</h3>
+              <ul className="amenities-list">
+                <li>퀸사이즈 침대 2개</li>
+                <li>퀸사이즈 바닥용 매트리스 1개</li>
+              </ul>
+            </div>
+          </div>
 
           <div className="room-card">
             <h3>🪟️ Room 1</h3>
