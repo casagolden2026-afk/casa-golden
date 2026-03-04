@@ -6,14 +6,32 @@ import Lightbox from 'yet-another-react-lightbox'
 import 'yet-another-react-lightbox/styles.css'
 import { LanguageModal } from './components/LanguageModal'
 import { RoomGallery } from './components/RoomGallery'
+import { VideoModal } from './components/VideoModal'
 
 function App() {
   const { t, i18n } = useTranslation()
   const [currentGallery, setCurrentGallery] = useState<string | null>(null)
   const [currentIndex, setCurrentIndex] = useState(0)
   const [isLanguageModalOpen, setIsLanguageModalOpen] = useState(false)
+  const [isVideoModalOpen, setIsVideoModalOpen] = useState(false)
   const [imageLoadStatus, setImageLoadStatus] = useState<Record<string, boolean>>({})
   const observerRef = useRef<IntersectionObserver | null>(null)
+
+  // 언어별 오시는 길 영상 URL 매핑
+  const videoUrlMap: Record<string, string> = {
+    ko: '/casa-golden/video/CasaGolden_how_to_find_us_ko_480.mp4',
+    en: '/casa-golden/video/CasaGolden_how_to_find_us_en_480.mp4',
+    ja: '/casa-golden/video/CasaGolden_how_to_find_us_jp_480.mp4',
+    'zh-CN': '/casa-golden/video/CasaGolden_how_to_find_us_cn_sc_480.mp4',
+    'zh-TW': '/casa-golden/video/CasaGolden_how_to_find_us_cn_tc_480.mp4',
+    id: '/casa-golden/video/CasaGolden_how_to_find_us_id_480.mp4',
+    es: '/casa-golden/video/CasaGolden_how_to_find_us_es_480.mp4',
+  }
+
+  // 현재 언어에 맞는 영상 URL 반환 (없으면 영어)
+  const getCurrentVideoUrl = () => {
+    return videoUrlMap[i18n.language] || videoUrlMap['en']
+  }
 
   // 현재 언어 이모지 반환
   const getLanguageEmoji = () => {
@@ -203,6 +221,13 @@ function App() {
       {/* Language Modal */}
       <LanguageModal isOpen={isLanguageModalOpen} onClose={() => setIsLanguageModalOpen(false)} />
 
+      {/* Video Modal */}
+      <VideoModal
+        isOpen={isVideoModalOpen}
+        onClose={() => setIsVideoModalOpen(false)}
+        videoSrc={getCurrentVideoUrl()}
+      />
+
       {/* Hero Section */}
       <section className="hero" id="home">
         <div className="hero-content">
@@ -232,6 +257,17 @@ function App() {
               <strong>{t('location.airportAccess')}</strong>
               <p>{t('location.airportAccessDesc')}</p>
             </div>
+          </div>
+
+          {/* Direction Video Section */}
+          <div className="video-section">
+            <h3>{t('location.directionVideo')}</h3>
+            <button
+                className="video-button"
+                onClick={() => setIsVideoModalOpen(true)}
+            >
+              {t('location.watchVideo')}
+            </button>
           </div>
 
           {/* Surroundings Subsection */}

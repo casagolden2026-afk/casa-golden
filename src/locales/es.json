@@ -39,7 +39,9 @@
       "gangnam": { "name": "Gangnam (Sinnonhyeon)", "time": "~30 minutos", "route": "Línea 2 Directa/Transbordo" },
       "jamsil": { "name": "Jamsil", "time": "~38 minutos", "route": "Línea 2 Directa" }
     },
-    "highlight": "Dentro de una hora de bajar del aeropuerto, puedes desempacar tu equipaje y disfrutar de un santuario de viaje perfecto donde puedes experimentar la cultura joven coreana con restaurantes, bares, cafeterías, compras y mucho más en la calle principal de Hongdae a solo 5 minutos a pie, mientras disfrutas de una taza de café."
+    "highlight": "Dentro de una hora de bajar del aeropuerto, puedes desempacar tu equipaje y disfrutar de un santuario de viaje perfecto donde puedes experimentar la cultura joven coreana con restaurantes, bares, cafeterías, compras y mucho más en la calle principal de Hongdae a solo 5 minutos a pie, mientras disfrutas de una taza de café.",
+    "directionVideo": "🎬 Cómo Encontrarnos",
+    "watchVideo": "Ver Video"
   },
   "facilities": {
     "title": "🏠 Espacios/Instalaciones disponibles para huéspedes",

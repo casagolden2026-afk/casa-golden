@@ -39,7 +39,9 @@
       "gangnam": { "name": "Gangnam (Sinnonhyeon)", "time": "~30 min", "route": "Direct Line 2 / Transfer" },
       "jamsil": { "name": "Jamsil", "time": "~38 min", "route": "Direct Line 2" }
     },
-    "highlight": "Within an hour of arriving at the airport, you can unpack your bags and enjoy a perfect travel sanctuary where you can experience Korean youth culture with restaurants, bars, cafes, shopping and more on the main Hongdae street just 5 minutes walk away, all while enjoying a cup of coffee."
+    "highlight": "Within an hour of arriving at the airport, you can unpack your bags and enjoy a perfect travel sanctuary where you can experience Korean youth culture with restaurants, bars, cafes, shopping and more on the main Hongdae street just 5 minutes walk away, all while enjoying a cup of coffee.",
+    "directionVideo": "🎬 How to Find Us",
+    "watchVideo": "Watch Video"
   },
   "facilities": {
     "title": "🏠 Guest-Available Spaces/Facilities",
