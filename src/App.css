@@ -139,7 +139,7 @@ body {
   width: 100%;
   min-height: 350px;
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-              url('/casa-golden/image/living_room_01.png') center/cover no-repeat;
+              url('/image/living_room_01.png') center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;

@@ -19,13 +19,13 @@ function App() {
 
   // 언어별 오시는 길 영상 URL 매핑
   const videoUrlMap: Record<string, string> = {
-    ko: '/casa-golden/video/CasaGolden_how_to_find_us_ko_480.mp4',
-    en: '/casa-golden/video/CasaGolden_how_to_find_us_en_480.mp4',
-    ja: '/casa-golden/video/CasaGolden_how_to_find_us_jp_480.mp4',
-    'zh-CN': '/casa-golden/video/CasaGolden_how_to_find_us_cn_sc_480.mp4',
-    'zh-TW': '/casa-golden/video/CasaGolden_how_to_find_us_cn_tc_480.mp4',
-    id: '/casa-golden/video/CasaGolden_how_to_find_us_id_480.mp4',
-    es: '/casa-golden/video/CasaGolden_how_to_find_us_es_480.mp4',
+    ko: 'video/CasaGolden_how_to_find_us_ko_480.mp4',
+    en: 'video/CasaGolden_how_to_find_us_en_480.mp4',
+    ja: 'video/CasaGolden_how_to_find_us_jp_480.mp4',
+    'zh-CN': 'video/CasaGolden_how_to_find_us_cn_sc_480.mp4',
+    'zh-TW': 'video/CasaGolden_how_to_find_us_cn_tc_480.mp4',
+    id: 'video/CasaGolden_how_to_find_us_id_480.mp4',
+    es: 'video/CasaGolden_how_to_find_us_es_480.mp4',
   }
 
   // 현재 언어에 맞는 영상 URL 반환 (없으면 영어)
@@ -58,48 +58,48 @@ function App() {
   // 각 방별 이미지 데이터
   const galleryData = {
     room1: [
-      { src: '/casa-golden/image/room_1_01.png', alt: 'room1-1' },
-      { src: '/casa-golden/image/room_1_02.png', alt: 'room1-2' },
-      { src: '/casa-golden/image/room_1_03.png', alt: 'room1-3' },
-      { src: '/casa-golden/image/room_1_04.png', alt: 'room1-4' },
+      { src: 'image/room_1_01.png', alt: 'room1-1' },
+      { src: 'image/room_1_02.png', alt: 'room1-2' },
+      { src: 'image/room_1_03.png', alt: 'room1-3' },
+      { src: 'image/room_1_04.png', alt: 'room1-4' },
     ],
     room2: [
-      { src: '/casa-golden/image/room_2_01.png', alt: 'room2-1' },
-      { src: '/casa-golden/image/room_2_02.jpg', alt: 'room2-2' },
-      { src: '/casa-golden/image/room_2_03.jpg', alt: 'room2-3' },
-      { src: '/casa-golden/image/room_2_04.png', alt: 'room2-4' },
+      { src: 'image/room_2_01.png', alt: 'room2-1' },
+      { src: 'image/room_2_02.jpg', alt: 'room2-2' },
+      { src: 'image/room_2_03.jpg', alt: 'room2-3' },
+      { src: 'image/room_2_04.png', alt: 'room2-4' },
     ],
     living: [
-      { src: '/casa-golden/image/living_room_01.png', alt: 'living-1' },
-      { src: '/casa-golden/image/living_room_02.png', alt: 'living-2' },
-      { src: '/casa-golden/image/living_room_03.jpg', alt: 'living-3' },
-      { src: '/casa-golden/image/living_room_04.jpg', alt: 'living-4' },
-      { src: '/casa-golden/image/living_room_05.jpg', alt: 'living-5' },
+      { src: 'image/living_room_01.png', alt: 'living-1' },
+      { src: 'image/living_room_02.png', alt: 'living-2' },
+      { src: 'image/living_room_03.jpg', alt: 'living-3' },
+      { src: 'image/living_room_04.jpg', alt: 'living-4' },
+      { src: 'image/living_room_05.jpg', alt: 'living-5' },
     ],
     kitchen: [
-      { src: '/casa-golden/image/kitchen_01.jpg', alt: 'kitchen-1' },
-      { src: '/casa-golden/image/kitchen_02.jpg', alt: 'kitchen-2' },
-      { src: '/casa-golden/image/kitchen_03.jpg', alt: 'kitchen-3' },
-      { src: '/casa-golden/image/kitchen_04.jpg', alt: 'kitchen-4' },
-      { src: '/casa-golden/image/kitchen_05.jpg', alt: 'kitchen-5' },
-      { src: '/casa-golden/image/kitchen_06.jpg', alt: 'kitchen-6' },
-      { src: '/casa-golden/image/kitchen_07.jpg', alt: 'kitchen-7' },
-      { src: '/casa-golden/image/kitchen_08.jpg', alt: 'kitchen-8' },
+      { src: 'image/kitchen_01.jpg', alt: 'kitchen-1' },
+      { src: 'image/kitchen_02.jpg', alt: 'kitchen-2' },
+      { src: 'image/kitchen_03.jpg', alt: 'kitchen-3' },
+      { src: 'image/kitchen_04.jpg', alt: 'kitchen-4' },
+      { src: 'image/kitchen_05.jpg', alt: 'kitchen-5' },
+      { src: 'image/kitchen_06.jpg', alt: 'kitchen-6' },
+      { src: 'image/kitchen_07.jpg', alt: 'kitchen-7' },
+      { src: 'image/kitchen_08.jpg', alt: 'kitchen-8' },
     ],
     bathroom: [
-      { src: '/casa-golden/image/bathroom_01.jpg', alt: 'bathroom-1' },
-      { src: '/casa-golden/image/bathroom_02.jpg', alt: 'bathroom-2' },
-      { src: '/casa-golden/image/bathroom_03.jpg', alt: 'bathroom-3' },
+      { src: 'image/bathroom_01.jpg', alt: 'bathroom-1' },
+      { src: 'image/bathroom_02.jpg', alt: 'bathroom-2' },
+      { src: 'image/bathroom_03.jpg', alt: 'bathroom-3' },
     ],
     utility: [
-      { src: '/casa-golden/image/utility_room_01.jpg', alt: 'utility-1' },
-      { src: '/casa-golden/image/utility_room_02.jpg', alt: 'utility-2' },
-      { src: '/casa-golden/image/utility_room_03.jpg', alt: 'utility-3' },
+      { src: 'image/utility_room_01.jpg', alt: 'utility-1' },
+      { src: 'image/utility_room_02.jpg', alt: 'utility-2' },
+      { src: 'image/utility_room_03.jpg', alt: 'utility-3' },
     ],
     outdoor: [
-      { src: '/casa-golden/image/outdoor_view.jpg', alt: 'outdoor-1' },
-      { src: '/casa-golden/image/outdoor_building.png', alt: 'outdoor-2' },
-      { src: '/casa-golden/image/outdoor_elevator.png', alt: 'outdoor-3' },
+      { src: 'image/outdoor_view.jpg', alt: 'outdoor-1' },
+      { src: 'image/outdoor_building.png', alt: 'outdoor-2' },
+      { src: 'image/outdoor_elevator.png', alt: 'outdoor-3' },
     ],
   }
 
@@ -165,7 +165,7 @@ function App() {
       <header className="header">
         <div className="header-container">
           <div className="logo-section">
-            <img src="/casa-golden/logo/logo.png" alt="Casa Golden" className="logo-img" />
+            <img src="logo/logo.png" alt="Casa Golden" className="logo-img" />
           </div>
           <nav>
             <ul className="nav-links">

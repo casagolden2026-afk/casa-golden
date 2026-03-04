@@ -39,7 +39,7 @@ export const GalleryImage: React.FC<GalleryImageProps> = ({
       {!isLoaded && <div className="image-loading-skeleton" />}
       <img
         ref={imgRef}
-        data-src={src}
+        src={src}
         alt={alt}
         className={`room-gallery-thumb ${isLoaded ? 'loaded' : ''}`}
         onClick={onClick}
