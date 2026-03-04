@@ -521,7 +521,6 @@ body {
 .footer .cta-button {
   padding: 0.6rem 1.8rem;
   font-size: 0.8rem;
-  flex-shrink: 0;
 }
 
 .footer p {
@@ -856,3 +855,11 @@ body {
   }
 }
 
+/* Lightbox Customization */
+.yarl__button {
+  transition: all 0.3s ease;
+}
+
+.yarl__button:hover {
+  background-color: #daa520 !important;
+}
