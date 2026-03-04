@@ -40,9 +40,9 @@ export const imageData = {
     { src: 'image/kitchen_08.webp', alt: 'kitchen-8' },
   ],
   bathroom: [
-    { src: 'image/bathroom_01.webp', alt: 'bathroom-1' },
-    { src: 'image/bathroom_02.webp', alt: 'bathroom-2' },
     { src: 'image/bathroom_03.webp', alt: 'bathroom-3' },
+    { src: 'image/bathroom_02.webp', alt: 'bathroom-2' },
+    { src: 'image/bathroom_01.webp', alt: 'bathroom-1' },
   ],
   utility: [
     { src: 'image/utility_room_01.webp', alt: 'utility-1' },
