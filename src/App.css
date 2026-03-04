@@ -1,3 +1,8 @@
+/* Global Scroll Behavior */
+html {
+  scroll-behavior: smooth;
+}
+
 /* Header */
 .header {
   width: 100%;
@@ -68,6 +73,12 @@
 
 .nav-links a:hover {
   color: #F4C430;
+}
+
+/* Active scroll link styling */
+.nav-links a.active {
+  color: #F4C430;
+  border-bottom: 2px solid #F4C430;
 }
 
 /* Main Container */

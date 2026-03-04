@@ -1,6 +1,12 @@
 import './App.css'
+import { Link as ScrollLink } from 'react-scroll'
 
 function App() {
+  // 스크롤 offset 설정 (헤더 높이 고려)
+  const SCROLL_OFFSET = -50
+  // 스크롤 애니메이션 속도 (150ms = 빠른 반응)
+  const SCROLL_DURATION = 150
+
   return (
     <div className="app-container">
       {/* Header */}
@@ -11,10 +17,55 @@ function App() {
           </div>
           <nav>
             <ul className="nav-links">
-              <li><a href="#home">홈</a></li>
-              <li><a href="#location">위치</a></li>
-              <li><a href="#facilities">시설</a></li>
-              <li><a href="#rooms">객실</a></li>
+              <li>
+                <ScrollLink
+                  to="home"
+                  duration={SCROLL_DURATION}
+                  offset={SCROLL_OFFSET}
+                  activeClass="active"
+                  spy={true}
+                  style={{ cursor: 'pointer' }}
+                >
+                  홈
+                </ScrollLink>
+              </li>
+              <li>
+                <ScrollLink
+                  to="location"
+                  duration={SCROLL_DURATION}
+                  offset={SCROLL_OFFSET}
+                  activeClass="active"
+                  spy={true}
+                  style={{ cursor: 'pointer' }}
+                >
+                  위치
+                </ScrollLink>
+              </li>
+              <li>
+                <ScrollLink
+                  to="facilities"
+                  duration={SCROLL_DURATION}
+                  offset={SCROLL_OFFSET}
+                  activeClass="active"
+                  spy={true}
+                  style={{ cursor: 'pointer' }}
+                >
+                  시설
+                </ScrollLink>
+              </li>
+              <li>
+                <ScrollLink
+                  to="rooms"
+                  smooth={true}
+                  duration={SCROLL_DURATION}
+                  offset={SCROLL_OFFSET}
+                  activeClass="active"
+                  spy={true}
+                  style={{ cursor: 'pointer' }}
+                >
+                  객실
+                </ScrollLink>
+              </li>
             </ul>
           </nav>
         </div>
@@ -221,7 +272,7 @@ function App() {
       </main>
 
       {/* Footer */}
-      <footer className="footer" id="contact">
+      <footer className="footer">
         <div className="footer-info">
           <p>&copy; 2026 Casa Golden. 모든 권리 보유.</p>
           <p>문의: <a href="https://airbnb.com/h/casa-golden" target="_blank" rel="noopener noreferrer">https://airbnb.com/h/casa-golden</a></p>
