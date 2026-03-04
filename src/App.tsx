@@ -1,7 +1,72 @@
 import './App.css'
 import { Link as ScrollLink } from 'react-scroll'
+import { useState } from 'react'
+import Lightbox from 'yet-another-react-lightbox'
+import 'yet-another-react-lightbox/styles.css'
 
 function App() {
+  // 갤러리 상태 관리
+  const [currentGallery, setCurrentGallery] = useState<string | null>(null)
+  const [currentIndex, setCurrentIndex] = useState(0)
+
+  // 각 방별 이미지 데이터
+  const galleryData = {
+    room1: [
+      { src: '/casa-golden/image/room_1_01.png', alt: 'Room 1 - 1' },
+      { src: '/casa-golden/image/room_1_02.png', alt: 'Room 1 - 2' },
+    ],
+    room2: [
+      { src: '/casa-golden/image/room_2_01.png', alt: 'Room 2 - 1' },
+      { src: '/casa-golden/image/room_2_02.jpg', alt: 'Room 2 - 2' },
+      { src: '/casa-golden/image/room_2_03.jpg', alt: 'Room 2 - 3' },
+    ],
+    living: [
+      { src: '/casa-golden/image/living_room_01.png', alt: 'Living Room - 1' },
+      { src: '/casa-golden/image/living_room_02.png', alt: 'Living Room - 2' },
+      { src: '/casa-golden/image/living_room_03.jpg', alt: 'Living Room - 3' },
+      { src: '/casa-golden/image/living_room_04.jpg', alt: 'Living Room - 4' },
+      { src: '/casa-golden/image/living_room_05.jpg', alt: 'Living Room - 5' },
+    ],
+    kitchen: [
+      { src: '/casa-golden/image/kitchen_01.jpg', alt: 'Kitchen - 1' },
+      { src: '/casa-golden/image/kitchen_02.jpg', alt: 'Kitchen - 2' },
+      { src: '/casa-golden/image/kitchen_03.jpg', alt: 'Kitchen - 3' },
+      { src: '/casa-golden/image/kitchen_04.jpg', alt: 'Kitchen - 4' },
+      { src: '/casa-golden/image/kitchen_05.jpg', alt: 'Kitchen - 5' },
+      { src: '/casa-golden/image/kitchen_06.jpg', alt: 'Kitchen - 6' },
+      { src: '/casa-golden/image/kitchen_07.jpg', alt: 'Kitchen - 7' },
+      { src: '/casa-golden/image/kitchen_08.jpg', alt: 'Kitchen - 8' },
+    ],
+    bathroom: [
+      { src: '/casa-golden/image/bathroom_01.jpg', alt: 'Bathroom - 1' },
+      { src: '/casa-golden/image/bathroom_02.jpg', alt: 'Bathroom - 2' },
+      { src: '/casa-golden/image/bathroom_03.jpg', alt: 'Bathroom - 3' },
+    ],
+    utility: [
+      { src: '/casa-golden/image/utility_room_01.jpg', alt: 'Utility Room - 1' },
+      { src: '/casa-golden/image/utility_room_02.jpg', alt: 'Utility Room - 2' },
+      { src: '/casa-golden/image/utility_room_03.jpg', alt: 'Utility Room - 3' },
+    ],
+    outdoor: [
+      { src: '/casa-golden/image/outdoor_view.jpg', alt: 'Outdoor - 전경' },
+      { src: '/casa-golden/image/outdoor_building.png', alt: 'Outdoor - 건물' },
+      { src: '/casa-golden/image/outdoor_elevator.png', alt: 'Outdoor - 엘레베이터' },
+    ],
+  }
+
+  const openGallery = (galleryName: string, index: number = 0) => {
+    setCurrentGallery(galleryName)
+    setCurrentIndex(index)
+  }
+
+  const closeGallery = () => {
+    setCurrentGallery(null)
+  }
+
+  const getCurrentImages = () => {
+    if (!currentGallery) return []
+    return galleryData[currentGallery as keyof typeof galleryData] || []
+  }
   // 스크롤 offset 설정 (헤더 높이 고려)
   const SCROLL_OFFSET = -50
   // 스크롤 애니메이션 속도 (150ms = 빠른 반응)
@@ -202,6 +267,17 @@ function App() {
 
           <div className="room-card">
             <h3>🪟️ Room 1</h3>
+            <div className="room-gallery">
+              {galleryData.room1.map((image, index) => (
+                <img
+                  key={index}
+                  src={image.src}
+                  alt={image.alt}
+                  className="room-gallery-thumb"
+                  onClick={() => openGallery('room1', index)}
+                />
+              ))}
+            </div>
             <ul className="amenities-list">
               <li>퀸 사이즈 침대 1개</li>
               <li>헤어드라이기 &amp; 고데기</li>
@@ -213,6 +289,17 @@ function App() {
 
           <div className="room-card">
             <h3>🛏 Room 2</h3>
+            <div className="room-gallery">
+              {galleryData.room2.map((image, index) => (
+                <img
+                  key={index}
+                  src={image.src}
+                  alt={image.alt}
+                  className="room-gallery-thumb"
+                  onClick={() => openGallery('room2', index)}
+                />
+              ))}
+            </div>
             <ul className="amenities-list">
               <li>퀸 사이즈 침대 1개</li>
               <li>대형 옷장</li>
@@ -227,6 +314,17 @@ function App() {
 
           <div className="room-card">
             <h3>✨ Living Room</h3>
+            <div className="room-gallery">
+              {galleryData.living.map((image, index) => (
+                <img
+                  key={index}
+                  src={image.src}
+                  alt={image.alt}
+                  className="room-gallery-thumb"
+                  onClick={() => openGallery('living', index)}
+                />
+              ))}
+            </div>
             <ul className="amenities-list">
               <li>바닥용 퀸 사이즈 매트리스 1개와 이불 (Room 2의 옷장안에 구비)</li>
               <li>50-inch 스마트 TV</li>
@@ -241,6 +339,17 @@ function App() {
 
           <div className="room-card">
             <h3>🍳 Kitchen</h3>
+            <div className="room-gallery">
+              {galleryData.kitchen.map((image, index) => (
+                <img
+                  key={index}
+                  src={image.src}
+                  alt={image.alt}
+                  className="room-gallery-thumb"
+                  onClick={() => openGallery('kitchen', index)}
+                />
+              ))}
+            </div>
             <ul className="amenities-list">
               <li>냉장고</li>
               <li>인덕션</li>
@@ -252,6 +361,17 @@ function App() {
 
           <div className="room-card">
             <h3>🛁 Bathroom</h3>
+            <div className="room-gallery">
+              {galleryData.bathroom.map((image, index) => (
+                <img
+                  key={index}
+                  src={image.src}
+                  alt={image.alt}
+                  className="room-gallery-thumb"
+                  onClick={() => openGallery('bathroom', index)}
+                />
+              ))}
+            </div>
             <ul className="amenities-list">
               <li>수건</li>
               <li>샴푸, 컨디셔너, 바디워시, 핸드워시</li>
@@ -260,12 +380,43 @@ function App() {
 
           <div className="room-card">
             <h3>🧺 Utility Room</h3>
+            <div className="room-gallery">
+              {galleryData.utility.map((image, index) => (
+                <img
+                  key={index}
+                  src={image.src}
+                  alt={image.alt}
+                  className="room-gallery-thumb"
+                  onClick={() => openGallery('utility', index)}
+                />
+              ))}
+            </div>
             <ul className="amenities-list">
               <li>세탁기 &amp; 건조기</li>
               <li>세제 &amp; 섬유유연제</li>
               <li>건조대</li>
               <li>재활용 분리수거함</li>
               <li>접이식 의자 2개</li>
+            </ul>
+          </div>
+
+          <div className="room-card">
+            <h3>🏢 Outdoor</h3>
+            <div className="room-gallery">
+              {galleryData.outdoor.map((image, index) => (
+                <img
+                  key={index}
+                  src={image.src}
+                  alt={image.alt}
+                  className="room-gallery-thumb"
+                  onClick={() => openGallery('outdoor', index)}
+                />
+              ))}
+            </div>
+            <ul className="amenities-list">
+              <li>호텔에서 바라본 서울 시 전경</li>
+              <li>신축 건물 (2024년 완공)</li>
+              <li>편의로운 엘레베이터 접근</li>
             </ul>
           </div>
         </section>
@@ -281,6 +432,19 @@ function App() {
           지금 예약하기
         </button>
       </footer>
+
+      {/* Lightbox Gallery */}
+      {currentGallery && (
+        <Lightbox
+          slides={getCurrentImages()}
+          open={currentGallery !== null}
+          index={currentIndex}
+          close={closeGallery}
+          on={{
+            view: ({ index }) => setCurrentIndex(index),
+          }}
+        />
+      )}
     </div>
   )
 }

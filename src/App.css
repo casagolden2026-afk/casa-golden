@@ -1,6 +1,13 @@
 /* Global Scroll Behavior */
 html {
   scroll-behavior: smooth;
+  font-family: 'Noto Sans KR', 'Inter', sans-serif;
+}
+
+body {
+  font-family: 'Noto Sans KR', 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /* Header */
@@ -46,6 +53,7 @@ html {
   font-weight: 700;
   color: #fafafa;
   letter-spacing: 0.05em;
+  font-family: 'Poppins', sans-serif;
 }
 
 .nav-links {
@@ -105,7 +113,7 @@ html {
   width: 100%;
   min-height: 350px;
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-              url('/casa-golden/image/main01.png') center/cover no-repeat;
+              url('/casa-golden/image/living_room_01.png') center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -124,6 +132,8 @@ html {
   font-weight: 700;
   margin: 0 0 0.5rem 0;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: -0.02em;
 }
 
 .hero-tagline {
@@ -161,6 +171,9 @@ html {
   margin: 0 0 1rem 0;
   border-bottom: 3px solid #F4C430;
   padding-bottom: 0.5rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.01em;
 }
 
 .info-grid {
@@ -223,6 +236,9 @@ html {
   margin: 0 0 0.5rem 0;
   border-bottom: 3px solid #F4C430;
   padding-bottom: 0.5rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.01em;
 }
 
 .subway-intro {
@@ -304,6 +320,9 @@ html {
   margin: 0 0 1.5rem 0;
   border-bottom: 3px solid #F4C430;
   padding-bottom: 0.5rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.01em;
 }
 
 .room-card {
@@ -319,6 +338,30 @@ html {
   font-size: 1.2rem;
   color: #2c3e50;
   margin: 0 0 1rem 0;
+}
+
+/* Room Gallery */
+.room-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 0.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.room-gallery-thumb {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.room-gallery-thumb:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(244, 196, 48, 0.3);
+  border-color: #F4C430;
 }
 
 /* CTA Container */
@@ -373,7 +416,7 @@ html {
 .footer .footer-info {
   display: flex;
   flex-direction: column;
-  gap: 0.2rem;
+  gap: 0.1rem;
 }
 
 .footer .cta-button {
@@ -427,7 +470,7 @@ html {
 
   .footer .cta-button {
     padding: 0.7rem 2rem;
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 }
 
@@ -507,6 +550,16 @@ html {
     font-size: 1.1rem;
   }
 
+  .room-gallery {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 0.6rem;
+    margin-bottom: 1rem;
+  }
+
+  .room-gallery-thumb {
+    height: 100px;
+  }
+
   .amenities-list li {
     font-size: 0.9rem;
     padding: 0.5rem 0;
@@ -525,7 +578,7 @@ html {
 
   .footer .cta-button {
     padding: 0.6rem 1.8rem;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
 }
 
@@ -668,6 +721,16 @@ html {
     margin-bottom: 0.8rem;
   }
 
+  .room-gallery {
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .room-gallery-thumb {
+    height: 80px;
+  }
+
   .amenities-list li {
     font-size: 0.85rem;
     padding: 0.4rem 0;
@@ -690,11 +753,7 @@ html {
 
   .footer .cta-button {
     padding: 0.5rem 1.2rem;
-    font-size: 0.7rem;
-  }
-
-  .footer p {
-    margin: 0.3rem 0;
+    font-size: 0.8rem;
   }
 }
 
