@@ -1,0 +1,148 @@
+{
+  "header": {
+    "home": "Rumah",
+    "location": "Lokasi",
+    "facilities": "Fasilitas/Kamar"
+  },
+  "hero": {
+    "title": "Casa Golden",
+    "tagline": "Pembukaan Baru (Maret 2026) | Bangunan Baru (2024)",
+    "description": "Anda pasti akan menyukai Casa Golden yang hangat dan nyaman. (●'◡'●)"
+  },
+  "location": {
+    "title": "📍 Lokasi",
+    "hongdaeStation": "Stasiun Hongdae",
+    "hongdaeStationDistance": "5 menit berjalan kaki",
+    "busStop": "Halte Bus",
+    "busStopDistance": "3 menit berjalan kaki",
+    "airportAccess": "Akses Bandara",
+    "airportAccessDesc": "Mudah diakses dengan kereta/bus",
+    "surroundings": "🏘️ Sekitar",
+    "surroundingsItems": [
+      "Terletak di area residensial yang tenang dan damai",
+      "Toko 24 jam: 1 menit berjalan kaki",
+      "3 kafe: 3 menit berjalan kaki",
+      "Laundri mandiri: 1 menit berjalan kaki",
+      "Olive Young (suvenir): 1 menit berjalan kaki"
+    ],
+    "subway": "🚝 Waktu tempuh dari Stasiun Hongdae ke atraksi utama",
+    "subwayIntro": "Stasiun Hongdae terletak di pusat transportasi Seoul dan merupakan tempat di mana energi dimulai.",
+    "destinations": {
+      "euljiroad": { "name": "Stasiun Euljiroad", "time": "~12 menit", "route": "Lurus Lini 2" },
+      "yeouido": { "name": "Yeouido", "time": "~16 menit", "route": "Lini 2 → Transfer Lini 9" },
+      "itaewon": { "name": "Itaewon", "time": "~17 menit", "route": "Kereta Bandara → Transfer Lini 6" },
+      "jongno": { "name": "Jongno 3-ga", "time": "~20 menit", "route": "Lini 2 → Transfer Lini 1" },
+      "dongdaemun": { "name": "Dongdaemun", "time": "~20 menit", "route": "Lini 2 → Transfer Lini 4" },
+      "gyeongbokgung": { "name": "Gyeongbokgung, Anguk", "time": "~23 menit", "route": "Lini 2 → Transfer Lini 3" },
+      "myeongdong": { "name": "Myeongdong", "time": "~23 menit", "route": "Lini 2 → Lini 4/Lini Bandara" },
+      "seongsu": { "name": "Seongsu", "time": "~26 menit", "route": "Lurus Lini 2" },
+      "gangnam": { "name": "Gangnam (Sinnonhyeon)", "time": "~30 menit", "route": "Lurus Lini 2 / Transfer" },
+      "jamsil": { "name": "Jamsil", "time": "~38 menit", "route": "Lurus Lini 2" }
+    },
+    "highlight": "Dalam satu jam turun dari bandara, Anda bisa membuka koper Anda dan menikmati surga perjalanan sempurna di mana Anda dapat mengalami budaya muda Korea dengan restoran, bar, kafe, berbelanja dan banyak lagi di jalan utama Hongdae hanya 5 menit berjalan kaki, sambil menikmati secangkir kopi."
+  },
+  "facilities": {
+    "title": "🏠 Ruang/Fasilitas Tersedia untuk Tamu",
+    "amenities": "🖼️ Fasilitas",
+    "amenitiesItems": [
+      "Pemandangan Seoul & gunung dari jendela lantai 8",
+      "Lift",
+      "Penyimpanan bagasi gratis",
+      "Parkir gratis",
+      "Masuk mandiri"
+    ],
+    "bedding": "🛏️ Komposisi Tempat Tidur",
+    "beddingItems": [
+      "2 tempat tidur Queen-size",
+      "1 kasur lantai Queen-size"
+    ],
+    "bedroom1": {
+      "title": "🪟️ Kamar Tidur 1",
+      "items": [
+        "1 tempat tidur Queen-size",
+        "Pengering rambut & catokan",
+        "Cermin bulat & meja rias & kursi",
+        "Lampu meja",
+        "Stop kontak (kabel perpanjang)"
+      ]
+    },
+    "bedroom2": {
+      "title": "🛏 Kamar Tidur 2",
+      "items": [
+        "1 tempat tidur Queen-size",
+        "Lemari besar",
+        "Cermin berbentuk awan",
+        "Lampu meja",
+        "Kipas angin",
+        "Permainan papan",
+        "Kotak P3K",
+        "Stop kontak (kabel perpanjang)"
+      ]
+    },
+    "living": {
+      "title": "✨ Ruang Tamu",
+      "items": [
+        "1 kasur lantai Queen-size dengan selimut (disimpan di lemari kamar tidur 2)",
+        "TV pintar 50 inci",
+        "Pendingin udara",
+        "Sofa besar",
+        "Meja kopi lipat rendah",
+        "Pemandangan kota Seoul dari jendela lantai 8",
+        "Cermin panjang",
+        "WiFi gratis"
+      ]
+    },
+    "kitchen": {
+      "title": "🍳 Dapur",
+      "items": [
+        "Lemari es",
+        "Kompor induksi",
+        "Microwave",
+        "Pemanas air listrik",
+        "Peralatan masak & peralatan makan"
+      ]
+    },
+    "bathroom": {
+      "title": "🛁 Kamar Mandi",
+      "items": [
+        "Handuk",
+        "Sampo, kondisioner, sabun mandi, sabun tangan"
+      ]
+    },
+    "utility": {
+      "title": "🧺 Ruang Cuci",
+      "items": [
+        "Mesin cuci & pengering",
+        "Deterjen & pelembut kain",
+        "Rak pengeringan",
+        "Tempat sampah daur ulang",
+        "2 kursi lipat"
+      ]
+    },
+    "outdoor": {
+      "title": "🏢 Bangunan/Eksterior",
+      "items": [
+        "Pemandangan lanskap kota Seoul dari rumah tamu",
+        "Bangunan baru (selesai 2024)",
+        "Akses lift yang nyaman"
+      ]
+    }
+  },
+  "footer": {
+    "copyright": "© 2026 Casa Golden. Semua hak dilindungi.",
+    "inquiry": "Pertanyaan:",
+    "bookNow": "Pesan Sekarang"
+  },
+  "modal": {
+    "selectLanguage": "Pilih Bahasa",
+    "korean": "한국어",
+    "english": "English",
+    "japanese": "日本語",
+    "chineseSimplified": "简体中文",
+    "chineseTraditional": "繁體中文",
+    "indonesian": "Bahasa Indonesia",
+    "spanish": "Español",
+    "close": "Tutup"
+  }
+}
+

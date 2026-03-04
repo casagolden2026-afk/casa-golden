@@ -1,0 +1,148 @@
+{
+  "header": {
+    "home": "首页",
+    "location": "位置",
+    "facilities": "设施/客房"
+  },
+  "hero": {
+    "title": "Casa Golden",
+    "tagline": "新开业 (2026年3月) | 新建 (2024年)",
+    "description": "您一定会喜欢温暖舒适的Casa Golden。(●'◡'●)"
+  },
+  "location": {
+    "title": "📍 位置",
+    "hongdaeStation": "弘大入口站",
+    "hongdaeStationDistance": "步行5分钟",
+    "busStop": "公交车站",
+    "busStopDistance": "步行3分钟",
+    "airportAccess": "机场接入",
+    "airportAccessDesc": "乘火车/巴士很方便",
+    "surroundings": "🏘️ 周边环境",
+    "surroundingsItems": [
+      "位于安静祥和的住宅区",
+      "24小时便利店:步行1分钟",
+      "3间咖啡馆:步行3分钟",
+      "自助洗衣房:步行1分钟",
+      "橄榄青(纪念品):步行1分钟"
+    ],
+    "subway": "🚝 从弘大入口站到主要景点的交通时间",
+    "subwayIntro": "弘大入口站位于首尔交通中心，能量开始的地方。",
+    "destinations": {
+      "euljiroad": { "name": "乙支路入口站", "time": "约12分钟", "route": "2号线直达" },
+      "yeouido": { "name": "汝矣岛", "time": "约16分钟", "route": "2号线→9号线转乘" },
+      "itaewon": { "name": "梨泰院", "time": "约17分钟", "route": "机场铁路→6号线转乘" },
+      "jongno": { "name": "钟路3街", "time": "约20分钟", "route": "2号线→1号线转乘" },
+      "dongdaemun": { "name": "东大门", "time": "约20分钟", "route": "2号线→4号线转乘" },
+      "gyeongbokgung": { "name": "景福宫、安国", "time": "约23分钟", "route": "2号线→3号线转乘" },
+      "myeongdong": { "name": "明洞", "time": "约23分钟", "route": "2号线→4号线/机场线" },
+      "seongsu": { "name": "城水", "time": "约26分钟", "route": "2号线直达" },
+      "gangnam": { "name": "江南(新论峰)", "time": "约30分钟", "route": "2号线直达/转乘" },
+      "jamsil": { "name": "蚕室", "time": "约38分钟", "route": "2号线直达" }
+    },
+    "highlight": "从机场下车一小时内解包。在距离酒店仅5分钟步行的弘大主街上，您可以享受餐厅、酒吧、咖啡馆、购物等韩国年轻文化体验，同时享受一杯咖啡的悠闲，成为您完美旅行的避风港。"
+  },
+  "facilities": {
+    "title": "🏠 客人可用的空间/设施",
+    "amenities": "🖼️ 便利设施",
+    "amenitiesItems": [
+      "8楼大窗户享受首尔和山景",
+      "电梯",
+      "免费行李寄存",
+      "免费停车",
+      "自助入住"
+    ],
+    "bedding": "🛏️ 床上用品配置",
+    "beddingItems": [
+      "2张皇后型床",
+      "1张皇后型地铺床垫"
+    ],
+    "bedroom1": {
+      "title": "🪟️ 卧室1",
+      "items": [
+        "1张皇后型床",
+        "吹风机和卷发棒",
+        "圆镜和化妆台和椅子",
+        "台灯",
+        "插线板(延长线)"
+      ]
+    },
+    "bedroom2": {
+      "title": "🛏 卧室2",
+      "items": [
+        "1张皇后型床",
+        "大衣柜",
+        "云形镜子",
+        "台灯",
+        "风扇",
+        "棋盘游戏",
+        "急救包",
+        "插线板(延长线)"
+      ]
+    },
+    "living": {
+      "title": "✨ 客厅",
+      "items": [
+        "1张皇后型地铺床垫和被子(存放在卧室2的衣柜中)",
+        "50英寸智能电视",
+        "空调",
+        "大沙发",
+        "可折叠的矮咖啡桌",
+        "8楼大窗户首尔城市景观",
+        "全身镜",
+        "免费WiFi"
+      ]
+    },
+    "kitchen": {
+      "title": "🍳 厨房",
+      "items": [
+        "冰箱",
+        "电磁炉",
+        "微波炉",
+        "电热水壶",
+        "烹饪工具和餐具"
+      ]
+    },
+    "bathroom": {
+      "title": "🛁 浴室",
+      "items": [
+        "毛巾",
+        "洗发水、护发素、沐浴露、洗手液"
+      ]
+    },
+    "utility": {
+      "title": "🧺 洗衣房",
+      "items": [
+        "洗衣机和烘干机",
+        "洗涤剂和柔顺剂",
+        "晾衣架",
+        "可回收分类垃圾桶",
+        "2把可折叠椅子"
+      ]
+    },
+    "outdoor": {
+      "title": "🏢 建筑/外部",
+      "items": [
+        "从客栈看到的首尔城市景观",
+        "新建建筑(2024年竣工)",
+        "便捷的电梯通道"
+      ]
+    }
+  },
+  "footer": {
+    "copyright": "© 2026 Casa Golden. 版权所有。",
+    "inquiry": "咨询:",
+    "bookNow": "立即预订"
+  },
+  "modal": {
+    "selectLanguage": "选择语言",
+    "korean": "한국어",
+    "english": "English",
+    "japanese": "日本語",
+    "chineseSimplified": "简体中文",
+    "chineseTraditional": "繁體中文",
+    "indonesian": "Bahasa Indonesia",
+    "spanish": "Español",
+    "close": "关闭"
+  }
+}
+

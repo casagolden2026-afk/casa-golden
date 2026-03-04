@@ -1,0 +1,153 @@
+/* Language Modal */
+.language-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.language-modal-content {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 90%;
+  max-height: 80vh;
+  overflow-y: auto;
+  animation: slideUp 0.3s ease-out;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.language-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.language-modal-header h3 {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #101010;
+}
+
+.language-modal-close {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #999;
+  cursor: pointer;
+  padding: 0;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.language-modal-close:hover {
+  background: #f0f0f0;
+  color: #101010;
+}
+
+.language-modal-body {
+  padding: 12px 0;
+}
+
+.language-option {
+  width: 100%;
+  padding: 12px 20px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 1rem;
+  color: #333;
+  transition: all 0.2s ease;
+  text-align: left;
+  font-family: 'Noto Sans KR', 'Inter', sans-serif;
+}
+
+.language-option:hover {
+  background: #f5f5f5;
+}
+
+.language-option.active {
+  background: #f0f0f0;
+  font-weight: 600;
+  color: #F4C430;
+}
+
+.language-emoji {
+  font-size: 1.5rem;
+  min-width: 32px;
+  text-align: center;
+}
+
+.language-label {
+  flex: 1;
+}
+
+.language-checkmark {
+  color: #F4C430;
+  font-weight: bold;
+  margin-left: auto;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .language-modal-content {
+    max-width: 95%;
+  }
+
+  .language-modal-header {
+    padding: 16px;
+  }
+
+  .language-modal-header h3 {
+    font-size: 1.1rem;
+  }
+
+  .language-option {
+    padding: 10px 16px;
+    font-size: 0.95rem;
+  }
+
+  .language-emoji {
+    font-size: 1.3rem;
+    min-width: 28px;
+  }
+}
+

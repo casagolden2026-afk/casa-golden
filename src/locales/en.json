@@ -1,0 +1,148 @@
+{
+  "header": {
+    "home": "Home",
+    "location": "Location",
+    "facilities": "Facilities/Rooms"
+  },
+  "hero": {
+    "title": "Casa Golden",
+    "tagline": "New Open (March 2026) | New Building (2024)",
+    "description": "You will love the warm and comfortable Casa Golden. (●'◡'●)"
+  },
+  "location": {
+    "title": "📍 Location",
+    "hongdaeStation": "Hongdae Station",
+    "hongdaeStationDistance": "5 min walk",
+    "busStop": "Bus Stop",
+    "busStopDistance": "3 min walk",
+    "airportAccess": "Airport Access",
+    "airportAccessDesc": "Convenient by train/bus",
+    "surroundings": "🏘️ Surroundings",
+    "surroundingsItems": [
+      "Located in a quiet and peaceful residential area",
+      "24-hour convenience store: 1 min walk",
+      "3 cafes: 3 min walk",
+      "Self-service laundry: 1 min walk",
+      "Olive Young (souvenirs): 1 min walk"
+    ],
+    "subway": "🚝 Travel time from Hongdae Station to major attractions",
+    "subwayIntro": "Hongdae Station is located at the center of Seoul's transportation system and where energy begins.",
+    "destinations": {
+      "euljiroad": { "name": "Euljiroad Station", "time": "~12 min", "route": "Direct Line 2" },
+      "yeouido": { "name": "Yeouido", "time": "~16 min", "route": "Line 2 → Line 9 Transfer" },
+      "itaewon": { "name": "Itaewon", "time": "~17 min", "route": "Airport Railroad → Line 6 Transfer" },
+      "jongno": { "name": "Jongno 3-ga", "time": "~20 min", "route": "Line 2 → Line 1 Transfer" },
+      "dongdaemun": { "name": "Dongdaemun", "time": "~20 min", "route": "Line 2 → Line 4 Transfer" },
+      "gyeongbokgung": { "name": "Gyeongbokgung, Anguk", "time": "~23 min", "route": "Line 2 → Line 3 Transfer" },
+      "myeongdong": { "name": "Myeongdong", "time": "~23 min", "route": "Line 2 → Line 4/Airport Line" },
+      "seongsu": { "name": "Seongsu", "time": "~26 min", "route": "Direct Line 2" },
+      "gangnam": { "name": "Gangnam (Sinnonhyeon)", "time": "~30 min", "route": "Direct Line 2 / Transfer" },
+      "jamsil": { "name": "Jamsil", "time": "~38 min", "route": "Direct Line 2" }
+    },
+    "highlight": "Within an hour of arriving at the airport, you can unpack your bags and enjoy a perfect travel sanctuary where you can experience Korean youth culture with restaurants, bars, cafes, shopping and more on the main Hongdae street just 5 minutes walk away, all while enjoying a cup of coffee."
+  },
+  "facilities": {
+    "title": "🏠 Guest-Available Spaces/Facilities",
+    "amenities": "🖼️ Amenities",
+    "amenitiesItems": [
+      "Seoul & mountain views from 8-story windows",
+      "Elevator",
+      "Free luggage storage",
+      "Free parking",
+      "Self check-in"
+    ],
+    "bedding": "🛏️ Bedding Composition",
+    "beddingItems": [
+      "2 Queen-size beds",
+      "1 Queen-size floor mattress"
+    ],
+    "bedroom1": {
+      "title": "🪟️ Bedroom 1",
+      "items": [
+        "1 Queen-size bed",
+        "Hair dryer & curling iron",
+        "Round mirror & vanity & chair",
+        "Desk lamp",
+        "Power strip (extension cord)"
+      ]
+    },
+    "bedroom2": {
+      "title": "🛏 Bedroom 2",
+      "items": [
+        "1 Queen-size bed",
+        "Large closet",
+        "Cloud-shaped mirror",
+        "Desk lamp",
+        "Fan",
+        "Board games",
+        "First aid kit",
+        "Power strip (extension cord)"
+      ]
+    },
+    "living": {
+      "title": "✨ Living Room",
+      "items": [
+        "1 Queen-size floor mattress with bedding (stored in bedroom 2 closet)",
+        "50-inch smart TV",
+        "Air conditioning",
+        "Large sofa",
+        "Foldable low coffee table",
+        "8-story window Seoul city view",
+        "Full-length mirror",
+        "Free WiFi"
+      ]
+    },
+    "kitchen": {
+      "title": "🍳 Kitchen",
+      "items": [
+        "Refrigerator",
+        "Induction cooktop",
+        "Microwave",
+        "Electric kettle",
+        "Cooking utensils & tableware"
+      ]
+    },
+    "bathroom": {
+      "title": "🛁 Bathroom",
+      "items": [
+        "Towels",
+        "Shampoo, conditioner, body wash, hand wash"
+      ]
+    },
+    "utility": {
+      "title": "🧺 Laundry Room",
+      "items": [
+        "Washing machine & dryer",
+        "Detergent & fabric softener",
+        "Drying rack",
+        "Recycling bin",
+        "2 Foldable chairs"
+      ]
+    },
+    "outdoor": {
+      "title": "🏢 Building/Exterior",
+      "items": [
+        "Seoul cityscape view from the guest house",
+        "New building (completed 2024)",
+        "Convenient elevator access"
+      ]
+    }
+  },
+  "footer": {
+    "copyright": "© 2026 Casa Golden. All rights reserved.",
+    "inquiry": "Inquiry:",
+    "bookNow": "Book Now"
+  },
+  "modal": {
+    "selectLanguage": "Select Language",
+    "korean": "한국어",
+    "english": "English",
+    "japanese": "日本語",
+    "chineseSimplified": "简体中文",
+    "chineseTraditional": "繁體中文",
+    "indonesian": "Bahasa Indonesia",
+    "spanish": "Español",
+    "close": "Close"
+  }
+}
+

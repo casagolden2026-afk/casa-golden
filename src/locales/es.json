@@ -1,0 +1,148 @@
+{
+  "header": {
+    "home": "Inicio",
+    "location": "Ubicación",
+    "facilities": "Habitaciones"
+  },
+  "hero": {
+    "title": "Casa Golden",
+    "tagline": "Nueva Apertura (Marzo 2026) | Construcción Nueva (2024)",
+    "description": "Seguro que te encantará la Casa Golden cálida y cómoda. (●'◡'●)"
+  },
+  "location": {
+    "title": "📍 Ubicación",
+    "hongdaeStation": "Estación Hongdae",
+    "hongdaeStationDistance": "5 minutos a pie",
+    "busStop": "Parada de autobús",
+    "busStopDistance": "3 minutos a pie",
+    "airportAccess": "Acceso al aeropuerto",
+    "airportAccessDesc": "Conveniente en tren/autobús",
+    "surroundings": "🏘️ Alrededores",
+    "surroundingsItems": [
+      "Ubicado en una zona residencial tranquila y pacífica",
+      "Tienda de conveniencia 24 horas: 1 minuto a pie",
+      "3 cafeterías: 3 minutos a pie",
+      "Lavandería de autoservicio: 1 minuto a pie",
+      "Olive Young (recuerdos): 1 minuto a pie"
+    ],
+    "subway": "🚝 Tiempo de viaje desde la Estación Hongdae a las principales atracciones",
+    "subwayIntro": "La Estación Hongdae está ubicada en el centro del sistema de transporte de Seúl y es donde comienza la energía.",
+    "destinations": {
+      "euljiroad": { "name": "Estación Euljiroad", "time": "~12 minutos", "route": "Línea 2 Directa" },
+      "yeouido": { "name": "Yeouido", "time": "~16 minutos", "route": "Línea 2 → Transbordo Línea 9" },
+      "itaewon": { "name": "Itaewon", "time": "~17 minutos", "route": "Tren del Aeropuerto → Transbordo Línea 6" },
+      "jongno": { "name": "Jongno 3-ga", "time": "~20 minutos", "route": "Línea 2 → Transbordo Línea 1" },
+      "dongdaemun": { "name": "Dongdaemun", "time": "~20 minutos", "route": "Línea 2 → Transbordo Línea 4" },
+      "gyeongbokgung": { "name": "Gyeongbokgung, Anguk", "time": "~23 minutos", "route": "Línea 2 → Transbordo Línea 3" },
+      "myeongdong": { "name": "Myeongdong", "time": "~23 minutos", "route": "Línea 2 → Línea 4/Línea del Aeropuerto" },
+      "seongsu": { "name": "Seongsu", "time": "~26 minutos", "route": "Línea 2 Directa" },
+      "gangnam": { "name": "Gangnam (Sinnonhyeon)", "time": "~30 minutos", "route": "Línea 2 Directa/Transbordo" },
+      "jamsil": { "name": "Jamsil", "time": "~38 minutos", "route": "Línea 2 Directa" }
+    },
+    "highlight": "Dentro de una hora de bajar del aeropuerto, puedes desempacar tu equipaje y disfrutar de un santuario de viaje perfecto donde puedes experimentar la cultura joven coreana con restaurantes, bares, cafeterías, compras y mucho más en la calle principal de Hongdae a solo 5 minutos a pie, mientras disfrutas de una taza de café."
+  },
+  "facilities": {
+    "title": "🏠 Espacios/Instalaciones disponibles para huéspedes",
+    "amenities": "🖼️ Comodidades",
+    "amenitiesItems": [
+      "Vistas de Seúl y montaña desde ventanas del 8º piso",
+      "Ascensor",
+      "Almacenamiento de equipaje gratuito",
+      "Estacionamiento gratuito",
+      "Autoregistro"
+    ],
+    "bedding": "🛏️ Composición de ropa de cama",
+    "beddingItems": [
+      "2 camas tamaño Queen",
+      "1 colchón tipo piso tamaño Queen"
+    ],
+    "bedroom1": {
+      "title": "🪟️ Dormitorio 1",
+      "items": [
+        "1 cama tamaño Queen",
+        "Secador de pelo y rizador",
+        "Espejo redondo y tocador y silla",
+        "Lámpara de escritorio",
+        "Regleta (cable de extensión)"
+      ]
+    },
+    "bedroom2": {
+      "title": "🛏 Dormitorio 2",
+      "items": [
+        "1 cama tamaño Queen",
+        "Armario grande",
+        "Espejo en forma de nube",
+        "Lámpara de escritorio",
+        "Ventilador",
+        "Juegos de mesa",
+        "Botiquín de primeros auxilios",
+        "Regleta (cable de extensión)"
+      ]
+    },
+    "living": {
+      "title": "✨ Sala de estar",
+      "items": [
+        "1 colchón tipo piso tamaño Queen con ropa de cama (almacenado en el armario del dormitorio 2)",
+        "Televisor inteligente de 50 pulgadas",
+        "Aire acondicionado",
+        "Sofá grande",
+        "Mesa de café plegable baja",
+        "Vista de la ciudad de Seúl desde ventana del 8º piso",
+        "Espejo de cuerpo completo",
+        "WiFi gratuito"
+      ]
+    },
+    "kitchen": {
+      "title": "🍳 Cocina",
+      "items": [
+        "Refrigerador",
+        "Cocina de inducción",
+        "Microondas",
+        "Hervidor eléctrico",
+        "Utensilios de cocina y artículos de mesa"
+      ]
+    },
+    "bathroom": {
+      "title": "🛁 Baño",
+      "items": [
+        "Toallas",
+        "Champú, acondicionador, gel de baño, jabón de manos"
+      ]
+    },
+    "utility": {
+      "title": "🧺 Lavandería",
+      "items": [
+        "Lavadora y secadora",
+        "Detergente y suavizante de telas",
+        "Tendedero",
+        "Contenedor de reciclaje",
+        "2 sillas plegables"
+      ]
+    },
+    "outdoor": {
+      "title": "🏢 Edificio/Exterior",
+      "items": [
+        "Vista del paisaje urbano de Seúl desde la casa de huéspedes",
+        "Edificio nuevo (completado en 2024)",
+        "Acceso conveniente al ascensor"
+      ]
+    }
+  },
+  "footer": {
+    "copyright": "© 2026 Casa Golden. Todos los derechos reservados.",
+    "inquiry": "Consulta:",
+    "bookNow": "Reservar ahora"
+  },
+  "modal": {
+    "selectLanguage": "Seleccionar idioma",
+    "korean": "한국어",
+    "english": "English",
+    "japanese": "日本語",
+    "chineseSimplified": "简体中文",
+    "chineseTraditional": "繁體中文",
+    "indonesian": "Bahasa Indonesia",
+    "spanish": "Español",
+    "close": "Cerrar"
+  }
+}
+

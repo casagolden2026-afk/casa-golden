@@ -1,0 +1,148 @@
+{
+  "header": {
+    "home": "홈",
+    "location": "위치",
+    "facilities": "시설/객실"
+  },
+  "hero": {
+    "title": "Casa Golden",
+    "tagline": "New Open (2026년 3월) | 신축 (2024년)",
+    "description": "따뜻하고 편안한 Casa-Golden이 마음에 드실거에요.(●'◡'●)"
+  },
+  "location": {
+    "title": "📍 위치",
+    "hongdaeStation": "홍대입구역",
+    "hongdaeStationDistance": "도보 5분",
+    "busStop": "버스정류장",
+    "busStopDistance": "도보 3분",
+    "airportAccess": "공항 접근",
+    "airportAccessDesc": "철도/버스 이용 편리",
+    "surroundings": "🏘️ 주변환경",
+    "surroundingsItems": [
+      "조용하고 평화로운 주택가에 위치",
+      "24시간 편의점 : 도보 1분",
+      "카페 3곳 : 도보 3분",
+      "셀프 세탁방 : 도보 1분",
+      "올리브영 (기념품) : 도보 1분"
+    ],
+    "subway": "🚝 홍대입구역에서 주요 관광지까지 이동 시간",
+    "subwayIntro": "홍대입구역은 서울 교통의 중심이자 에너지가 시작되는 곳에 위치해 있습니다.",
+    "destinations": {
+      "euljiroad": { "name": "을지로입구역", "time": "약 12분", "route": "2호선 직행" },
+      "yeouido": { "name": "여의도", "time": "약 16분", "route": "2호선 → 9호선 환승" },
+      "itaewon": { "name": "이태원", "time": "약 17분", "route": "공항철도 → 6호선 환승" },
+      "jongno": { "name": "종로3가", "time": "약 20분", "route": "2호선 → 1호선 환승" },
+      "dongdaemun": { "name": "동대문", "time": "약 20분", "route": "2호선 → 4호선 환승" },
+      "gyeongbokgung": { "name": "경복궁, 안국", "time": "약 23분", "route": "2호선 → 3호선 환승" },
+      "myeongdong": { "name": "명동", "time": "약 23분", "route": "2호선 → 4호선/공항선" },
+      "seongsu": { "name": "성수", "time": "약 26분", "route": "2호선 직행" },
+      "gangnam": { "name": "강남(신논현)", "time": "약 30분", "route": "2호선 직행/환승" },
+      "jamsil": { "name": "잠실", "time": "약 38분", "route": "2호선 직행" }
+    },
+    "highlight": "공항에서 내린 지 1시간 만에 짐을 풀고, 도보 5분 거리의 홍대 메인거리에서 맛집, 술집, 카페, 쇼핑 등 한국의 젊은 문화를 체험하며 커피 한 잔의 여유를 즐길 수 있는 완벽한 여행의 안식처가 될 거예요."
+  },
+  "facilities": {
+    "title": "🏠 게스트 이용 가능 공간/시설",
+    "amenities": "🖼️ 편의시설",
+    "amenitiesItems": [
+      "8층 통창으로 즐기는 서울 & 산 뷰",
+      "엘레베이터",
+      "무료 짐 보관",
+      "무료 주차",
+      "셀프체크인"
+    ],
+    "bedding": "🛏️ 침구 구성",
+    "beddingItems": [
+      "퀸사이즈 침대 2개",
+      "퀸사이즈 바닥용 매트리스 1개"
+    ],
+    "bedroom1": {
+      "title": "🪟️ 침실 1",
+      "items": [
+        "퀸 사이즈 침대 1개",
+        "헤어드라이기 & 고데기",
+        "원형거울 & 화장대 & 의자",
+        "탁상조명",
+        "멀티탭 (연장코드)"
+      ]
+    },
+    "bedroom2": {
+      "title": "🛏 침실 2",
+      "items": [
+        "퀸 사이즈 침대 1개",
+        "대형 옷장",
+        "구름모양 거울",
+        "탁상조명",
+        "선풍기",
+        "보드게임",
+        "구급함",
+        "멀티탭 (연장코드)"
+      ]
+    },
+    "living": {
+      "title": "✨ 거실",
+      "items": [
+        "바닥용 퀸 사이즈 매트리스 1개와 이불 (침실 2의 옷장안에 구비)",
+        "50인치 스마트 TV",
+        "에어컨",
+        "넓은 소파",
+        "접이식 좌식 커피 테이블",
+        "8층 통창 서울 시티 뷰",
+        "전신거울",
+        "무료 WiFi"
+      ]
+    },
+    "kitchen": {
+      "title": "🍳 주방",
+      "items": [
+        "냉장고",
+        "인덕션",
+        "전자레인지",
+        "전기포트",
+        "조리도구 & 식기류"
+      ]
+    },
+    "bathroom": {
+      "title": "🛁 욕실",
+      "items": [
+        "수건",
+        "샴푸, 컨디셔너, 바디워시, 핸드워시"
+      ]
+    },
+    "utility": {
+      "title": "🧺 세탁실",
+      "items": [
+        "세탁기 & 건조기",
+        "세제 & 섬유유연제",
+        "건조대",
+        "재활용 분리수거함",
+        "접이식 의자 2개"
+      ]
+    },
+    "outdoor": {
+      "title": "🏢 건물/외부",
+      "items": [
+        "호텔에서 바라본 서울 시 전경",
+        "신축 건물 (2024년 완공)",
+        "편의로운 엘레베이터 접근"
+      ]
+    }
+  },
+  "footer": {
+    "copyright": "© 2026 Casa Golden. 모든 권리 보유.",
+    "inquiry": "문의:",
+    "bookNow": "지금 예약하기"
+  },
+  "modal": {
+    "selectLanguage": "언어를 선택하세요",
+    "korean": "한국어",
+    "english": "English",
+    "japanese": "日本語",
+    "chineseSimplified": "简体中文",
+    "chineseTraditional": "繁體中文",
+    "indonesian": "Bahasa Indonesia",
+    "spanish": "Español",
+    "close": "닫기"
+  }
+}
+
