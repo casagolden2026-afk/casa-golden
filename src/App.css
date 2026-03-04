@@ -134,46 +134,6 @@ body {
   padding-top: 50px;
 }
 
-/* Hero Section */
-.hero {
-  width: 100%;
-  min-height: 350px;
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-              url('/image/living_room_01.png') center/cover no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: white;
-  padding: 2rem 1rem;
-}
-
-.hero-content {
-  max-width: 600px;
-  width: 100%;
-}
-
-.hero h1 {
-  font-size: clamp(2rem, 8vw, 3.5rem);
-  font-weight: 700;
-  margin: 0 0 0.5rem 0;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  font-family: 'Poppins', sans-serif;
-  letter-spacing: -0.02em;
-}
-
-.hero-tagline {
-  font-size: clamp(0.9rem, 4vw, 1.2rem);
-  margin: 0.5rem 0;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-}
-
-.hero-description {
-  font-size: clamp(0.85rem, 3.5vw, 1.1rem);
-  margin: 0.5rem 0 0 0;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-}
-
 /* Main Content */
 .main-content {
   max-width: 1200px;
@@ -185,6 +145,7 @@ body {
 
 /* Location Section */
 .location-section {
+  margin-top: 2.5rem;
   margin-bottom: 2.5rem;
 }
 
@@ -588,10 +549,6 @@ body {
     padding-top: 65px;
   }
 
-  .hero {
-    margin-top: -65px;
-  }
-
   .main-content {
     padding: 2rem 1rem 85px 1rem;
   }
@@ -641,14 +598,12 @@ body {
     height: 35px;
   }
 
-  .hero {
-    min-height: 280px;
-    padding: 1.5rem 1rem;
-    margin-top: -50px;
-  }
-
   .main-content {
     padding: 1.5rem 1rem 70px 1rem;
+  }
+
+  .location-section {
+    margin-top: 1rem;
   }
 
   .info-section {
@@ -761,26 +716,12 @@ body {
     padding: 0.2rem 0.3rem;
   }
 
-  .hero {
-    min-height: 250px;
-    padding: 1rem;
-    margin-top: -50px;
-  }
-
-  .hero h1 {
-    font-size: 1.8rem;
-  }
-
-  .hero-tagline {
-    font-size: 0.8rem;
-  }
-
-  .hero-description {
-    font-size: 0.75rem;
-  }
-
   .main-content {
     padding: 1rem 0.8rem 70px 0.8rem;
+  }
+
+  .location-section {
+    margin-top: 0.7rem;
   }
 
   .info-section {

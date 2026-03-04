@@ -7,6 +7,8 @@ import 'yet-another-react-lightbox/styles.css'
 import { LanguageModal } from './components/LanguageModal'
 import { RoomGallery } from './components/RoomGallery'
 import { VideoModal } from './components/VideoModal'
+import { HeroSection } from './components/HeroSection'
+import { imageData } from './data/imageData.ts'
 
 function App() {
   const { t, i18n } = useTranslation()
@@ -55,53 +57,6 @@ function App() {
     }
   }
 
-  // 각 방별 이미지 데이터
-  const galleryData = {
-    room1: [
-      { src: 'image/room_1_01.png', alt: 'room1-1' },
-      { src: 'image/room_1_02.png', alt: 'room1-2' },
-      { src: 'image/room_1_03.png', alt: 'room1-3' },
-      { src: 'image/room_1_04.png', alt: 'room1-4' },
-    ],
-    room2: [
-      { src: 'image/room_2_01.png', alt: 'room2-1' },
-      { src: 'image/room_2_02.jpg', alt: 'room2-2' },
-      { src: 'image/room_2_03.jpg', alt: 'room2-3' },
-      { src: 'image/room_2_04.png', alt: 'room2-4' },
-    ],
-    living: [
-      { src: 'image/living_room_01.png', alt: 'living-1' },
-      { src: 'image/living_room_02.png', alt: 'living-2' },
-      { src: 'image/living_room_03.jpg', alt: 'living-3' },
-      { src: 'image/living_room_04.jpg', alt: 'living-4' },
-      { src: 'image/living_room_05.jpg', alt: 'living-5' },
-    ],
-    kitchen: [
-      { src: 'image/kitchen_01.jpg', alt: 'kitchen-1' },
-      { src: 'image/kitchen_02.jpg', alt: 'kitchen-2' },
-      { src: 'image/kitchen_03.jpg', alt: 'kitchen-3' },
-      { src: 'image/kitchen_04.jpg', alt: 'kitchen-4' },
-      { src: 'image/kitchen_05.jpg', alt: 'kitchen-5' },
-      { src: 'image/kitchen_06.jpg', alt: 'kitchen-6' },
-      { src: 'image/kitchen_07.jpg', alt: 'kitchen-7' },
-      { src: 'image/kitchen_08.jpg', alt: 'kitchen-8' },
-    ],
-    bathroom: [
-      { src: 'image/bathroom_01.jpg', alt: 'bathroom-1' },
-      { src: 'image/bathroom_02.jpg', alt: 'bathroom-2' },
-      { src: 'image/bathroom_03.jpg', alt: 'bathroom-3' },
-    ],
-    utility: [
-      { src: 'image/utility_room_01.jpg', alt: 'utility-1' },
-      { src: 'image/utility_room_02.jpg', alt: 'utility-2' },
-      { src: 'image/utility_room_03.jpg', alt: 'utility-3' },
-    ],
-    outdoor: [
-      { src: 'image/outdoor_view.jpg', alt: 'outdoor-1' },
-      { src: 'image/outdoor_building.png', alt: 'outdoor-2' },
-      { src: 'image/outdoor_elevator.png', alt: 'outdoor-3' },
-    ],
-  }
 
   const openGallery = (galleryName: string, index: number = 0) => {
     setCurrentGallery(galleryName)
@@ -114,7 +69,7 @@ function App() {
 
   const getCurrentImages = () => {
     if (!currentGallery) return []
-    return galleryData[currentGallery as keyof typeof galleryData] || []
+    return imageData[currentGallery as keyof typeof imageData] || []
   }
 
   // 이미지 로딩 완료 처리
@@ -156,7 +111,7 @@ function App() {
     }
   }, [])
 
-  const SCROLL_OFFSET = -60
+  const SCROLL_OFFSET = -70 // 헤더 높이만큼 오프셋 조정
   const SCROLL_DURATION = 150
 
   return (
@@ -229,13 +184,7 @@ function App() {
       />
 
       {/* Hero Section */}
-      <section className="hero" id="home">
-        <div className="hero-content">
-          <h1>{t('hero.title')}</h1>
-          <p className="hero-tagline">{t('hero.tagline')}</p>
-          <p className="hero-description">{t('hero.description')}</p>
-        </div>
-      </section>
+      <HeroSection />
 
       {/* Main Content */}
       <main className="main-content">
@@ -243,6 +192,17 @@ function App() {
         {/* Location Section */}
         <section className="location-section" id="location">
           <h2>{t('location.title')}</h2>
+
+          {/* Direction Video Section */}
+          <div className="video-section">
+            <h3>{t('location.directionVideo')}</h3>
+            <button
+                className="video-button"
+                onClick={() => setIsVideoModalOpen(true)}
+            >
+              {t('location.watchVideo')}
+            </button>
+          </div>
 
           <div className="info-grid">
             <div className="info-item">
@@ -257,17 +217,6 @@ function App() {
               <strong>{t('location.airportAccess')}</strong>
               <p>{t('location.airportAccessDesc')}</p>
             </div>
-          </div>
-
-          {/* Direction Video Section */}
-          <div className="video-section">
-            <h3>{t('location.directionVideo')}</h3>
-            <button
-                className="video-button"
-                onClick={() => setIsVideoModalOpen(true)}
-            >
-              {t('location.watchVideo')}
-            </button>
           </div>
 
           {/* Surroundings Subsection */}
@@ -329,7 +278,7 @@ function App() {
           <div className="room-card">
             <h3>{t('facilities.bedroom1.title')}</h3>
             <RoomGallery
-              images={galleryData.room1}
+              images={imageData.room1}
               imageLoadStatus={imageLoadStatus}
               onImageLoad={handleImageLoad}
               onImageError={handleImageError}
@@ -347,7 +296,7 @@ function App() {
           <div className="room-card">
             <h3>{t('facilities.bedroom2.title')}</h3>
             <RoomGallery
-              images={galleryData.room2}
+              images={imageData.room2}
               imageLoadStatus={imageLoadStatus}
               onImageLoad={handleImageLoad}
               onImageError={handleImageError}
@@ -365,7 +314,7 @@ function App() {
           <div className="room-card">
             <h3>{t('facilities.living.title')}</h3>
             <RoomGallery
-              images={galleryData.living}
+              images={imageData.living}
               imageLoadStatus={imageLoadStatus}
               onImageLoad={handleImageLoad}
               onImageError={handleImageError}
@@ -383,7 +332,7 @@ function App() {
           <div className="room-card">
             <h3>{t('facilities.kitchen.title')}</h3>
             <RoomGallery
-              images={galleryData.kitchen}
+              images={imageData.kitchen}
               imageLoadStatus={imageLoadStatus}
               onImageLoad={handleImageLoad}
               onImageError={handleImageError}
@@ -401,7 +350,7 @@ function App() {
           <div className="room-card">
             <h3>{t('facilities.bathroom.title')}</h3>
             <RoomGallery
-              images={galleryData.bathroom}
+              images={imageData.bathroom}
               imageLoadStatus={imageLoadStatus}
               onImageLoad={handleImageLoad}
               onImageError={handleImageError}
@@ -419,7 +368,7 @@ function App() {
           <div className="room-card">
             <h3>{t('facilities.utility.title')}</h3>
             <RoomGallery
-              images={galleryData.utility}
+              images={imageData.utility}
               imageLoadStatus={imageLoadStatus}
               onImageLoad={handleImageLoad}
               onImageError={handleImageError}
@@ -437,7 +386,7 @@ function App() {
           <div className="room-card">
             <h3>{t('facilities.outdoor.title')}</h3>
             <RoomGallery
-              images={galleryData.outdoor}
+              images={imageData.outdoor}
               imageLoadStatus={imageLoadStatus}
               onImageLoad={handleImageLoad}
               onImageError={handleImageError}
