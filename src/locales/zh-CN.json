@@ -11,12 +11,14 @@
   },
   "location": {
     "title": "📍 位置",
-    "hongdaeStation": "弘大入口站",
+    "hongdaeStation": "🚇 弘大入口站",
     "hongdaeStationDistance": "步行5分钟",
-    "busStop": "公交车站",
+    "busStop": "🚌 住宿前公交车站",
     "busStopDistance": "步行3分钟",
-    "airportAccess": "机场接入",
-    "airportAccessDesc": "乘火车/巴士很方便",
+    "hongdaeHotplace": "🛍️ 弘大热点",
+    "hongdaeHotplaceDesc": "韩国年轻文化中心 购物·咖啡馆·夜生活",
+    "airportAccess": "✈️ 机场接入",
+    "airportAccessDesc": "空港铁路·巴士便利",
     "surroundings": "🏘️ 周边环境",
     "surroundingsItems": [
       "位于安静祥和的住宅区",
@@ -40,8 +42,24 @@
       "jamsil": { "name": "蚕室", "time": "约38分钟", "route": "2号线直达" }
     },
     "highlight": "从机场下车一小时内解包。在距离酒店仅5分钟步行的弘大主街上，您可以享受餐厅、酒吧、咖啡馆、购物等韩国年轻文化体验，同时享受一杯咖啡的悠闲，成为您完美旅行的避风港。",
-    "directionVideo": "🎬 如何找到我们",
-    "watchVideo": "观看视频"
+    "howToFindUs": "如何找到我们",
+    "watchVideo": "🎥 观看视频",
+    "viewMap": "🗺️ 查看地图",
+    "mapTitle": "Casa Golden - 位置指南",
+    "mapPopup": {
+      "name": {
+        "casaGolden": "Casa Golden",
+        "subwayOut": "机场铁路7号出口",
+        "airportBusStop": "机场直达巴士站",
+        "busStop": "住宿前公交车站"
+      },
+      "desc": {
+        "casaGolden": "🏠 住宿",
+        "subwayOut": "🚇 步行5分钟 - 地铁(机场铁路·2号线)",
+        "airportBusStop": "🚌 步行8分钟 - (6002路巴士)",
+        "busStop": "🚌 步行3分钟 - 近郊交通"
+      }
+    }
   },
   "facilities": {
     "title": "🏠 客人可用的空间/设施",

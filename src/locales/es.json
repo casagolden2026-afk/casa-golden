@@ -11,12 +11,14 @@
   },
   "location": {
     "title": "📍 Ubicación",
-    "hongdaeStation": "Estación Hongdae",
+    "hongdaeStation": "🚇 Estación Hongdae",
     "hongdaeStationDistance": "5 minutos a pie",
-    "busStop": "Parada de autobús",
+    "busStop": "🚌 Parada de Autobús frente al Alojamiento",
     "busStopDistance": "3 minutos a pie",
-    "airportAccess": "Acceso al aeropuerto",
-    "airportAccessDesc": "Conveniente en tren/autobús",
+    "hongdaeHotplace": "🛍️ Punto Caliente de Hongdae",
+    "hongdaeHotplaceDesc": "Centro de cultura joven coreana Compras·Cafés·Vida nocturna",
+    "airportAccess": "✈️ Acceso al Aeropuerto",
+    "airportAccessDesc": "Tren del aeropuerto·Autobús conveniente",
     "surroundings": "🏘️ Alrededores",
     "surroundingsItems": [
       "Ubicado en una zona residencial tranquila y pacífica",
@@ -39,9 +41,25 @@
       "gangnam": { "name": "Gangnam (Sinnonhyeon)", "time": "~30 minutos", "route": "Línea 2 Directa/Transbordo" },
       "jamsil": { "name": "Jamsil", "time": "~38 minutos", "route": "Línea 2 Directa" }
     },
-    "highlight": "Dentro de una hora de bajar del aeropuerto, puedes desempacar tu equipaje y disfrutar de un santuario de viaje perfecto donde puedes experimentar la cultura joven coreana con restaurantes, bares, cafeterías, compras y mucho más en la calle principal de Hongdae a solo 5 minutos a pie, mientras disfrutas de una taza de café.",
-    "directionVideo": "🎬 Cómo Encontrarnos",
-    "watchVideo": "Ver Video"
+    "highlight": "Dentro de una hora de llegar al aeropuerto, puedes desempacar tus maletas y disfrutar de un santuario de viaje perfecto donde puedes experimentar la cultura joven coreana con restaurantes, bares, cafés, compras y más en la calle principal de Hongdae a solo 5 minutos a pie, mientras disfrutas de una taza de café.",
+    "howToFindUs": "Cómo Encontrarnos",
+    "watchVideo": "🎥 Ver Video",
+    "viewMap": "🗺️ Ver Mapa",
+    "mapTitle": "Casa Golden - Guía de Ubicación",
+    "mapPopup": {
+      "name": {
+        "casaGolden": "Casa Golden",
+        "subwayOut": "Salida 7 del Tren del Aeropuerto",
+        "airportBusStop": "Parada de Autobús Directo al Aeropuerto",
+        "busStop": "Parada de Autobús frente al Alojamiento"
+      },
+      "desc": {
+        "casaGolden": "🏠 Alojamiento",
+        "subwayOut": "🚇 5 minutos a pie - Metro (Tren del Aeropuerto·Línea 2)",
+        "airportBusStop": "🚌 8 minutos a pie - (Autobús No. 6002)",
+        "busStop": "🚌 3 minutos a pie - Transporte local"
+      }
+    }
   },
   "facilities": {
     "title": "🏠 Espacios/Instalaciones disponibles para huéspedes",

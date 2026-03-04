@@ -11,12 +11,14 @@
   },
   "location": {
     "title": "📍 Location",
-    "hongdaeStation": "Hongdae Station",
+    "hongdaeStation": "🚇 Hongdae Station",
     "hongdaeStationDistance": "5 min walk",
-    "busStop": "Bus Stop",
+    "busStop": "🚌 Bus Stop in front of the accommodation",
     "busStopDistance": "3 min walk",
-    "airportAccess": "Airport Access",
-    "airportAccessDesc": "Convenient by train/bus",
+    "hongdaeHotplace": "🛍️ Hongdae Hotspot",
+    "hongdaeHotplaceDesc": "Center of Korean youth culture Shopping·Cafes·Nightlife",
+    "airportAccess": "✈️ Airport Access",
+    "airportAccessDesc": "Airport Railway·Bus convenient",
     "surroundings": "🏘️ Surroundings",
     "surroundingsItems": [
       "Located in a quiet and peaceful residential area",
@@ -40,8 +42,24 @@
       "jamsil": { "name": "Jamsil", "time": "~38 min", "route": "Direct Line 2" }
     },
     "highlight": "Within an hour of arriving at the airport, you can unpack your bags and enjoy a perfect travel sanctuary where you can experience Korean youth culture with restaurants, bars, cafes, shopping and more on the main Hongdae street just 5 minutes walk away, all while enjoying a cup of coffee.",
-    "directionVideo": "🎬 How to Find Us",
-    "watchVideo": "Watch Video"
+    "howToFindUs": "How to Find Us",
+    "watchVideo": "🎥 Watch Video",
+    "viewMap": "🗺️ View Map",
+    "mapTitle": "Casa Golden - Location Guide",
+    "mapPopup": {
+      "name": {
+        "casaGolden": "Casa Golden",
+        "subwayOut": "Airport Railroad Exit 7",
+        "airportBusStop": "Airport Direct Bus Stop",
+        "busStop": "Bus Stop in front of the accommodation"
+      },
+      "desc": {
+        "casaGolden": "🏠 Accommodation",
+        "subwayOut": "🚇 5 min walk - Subway (Subway Airport Railroad·Line 2)",
+        "airportBusStop": "🚌 8 min walk - (Bus No. 6002)",
+        "busStop": "🚌 3 min walk - Local transit"
+      }
+    }
   },
   "facilities": {
     "title": "🏠 Guest-Available Spaces/Facilities",

@@ -197,7 +197,7 @@ body {
 
 .info-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
   margin-bottom: 2rem;
 }
@@ -616,7 +616,7 @@ body {
   }
 
   .info-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 0.8rem;
   }
 
@@ -866,7 +866,14 @@ body {
   font-weight: 700;
 }
 
-.video-button {
+.action-buttons-container {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.action-button {
   display: inline-block;
   padding: 0.75rem 2rem;
   background: #F4C430;
@@ -880,14 +887,14 @@ body {
   box-shadow: 0 4px 12px rgba(244, 196, 48, 0.3);
 }
 
-.video-button:hover {
+.action-button:hover {
   background: #daa520;
   color: #ffffff;
   transform: translateY(-2px);
   box-shadow: 0 6px 16px rgba(244, 196, 48, 0.4);
 }
 
-.video-button:active {
+.action-button:active {
   transform: translateY(0);
 }
 
@@ -902,7 +909,7 @@ body {
     font-size: 1.4rem;
   }
 
-  .video-button {
+  .action-button {
     padding: 0.6rem 1.5rem;
     font-size: 0.95rem;
   }

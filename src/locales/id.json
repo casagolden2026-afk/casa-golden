@@ -11,12 +11,14 @@
   },
   "location": {
     "title": "📍 Lokasi",
-    "hongdaeStation": "Stasiun Hongdae",
-    "hongdaeStationDistance": "5 menit berjalan kaki",
-    "busStop": "Halte Bus",
-    "busStopDistance": "3 menit berjalan kaki",
-    "airportAccess": "Akses Bandara",
-    "airportAccessDesc": "Mudah diakses dengan kereta/bus",
+    "hongdaeStation": "🚇 Stasiun Hongdae",
+    "hongdaeStationDistance": "5 menit jalan",
+    "busStop": "🚌 Halte Bus di Depan Akomodasi",
+    "busStopDistance": "3 menit jalan",
+    "hongdaeHotplace": "🛍️ Hongdae Hotspot",
+    "hongdaeHotplaceDesc": "Pusat budaya muda Korea Belanja·Kafe·Kehidupan malam",
+    "airportAccess": "✈️ Akses Bandara",
+    "airportAccessDesc": "Kereta bandara·Bus mudah diakses",
     "surroundings": "🏘️ Sekitar",
     "surroundingsItems": [
       "Terletak di area residensial yang tenang dan damai",
@@ -40,8 +42,24 @@
       "jamsil": { "name": "Jamsil", "time": "~38 menit", "route": "Lurus Lini 2" }
     },
     "highlight": "Dalam satu jam turun dari bandara, Anda bisa membuka koper Anda dan menikmati surga perjalanan sempurna di mana Anda dapat mengalami budaya muda Korea dengan restoran, bar, kafe, berbelanja dan banyak lagi di jalan utama Hongdae hanya 5 menit berjalan kaki, sambil menikmati secangkir kopi.",
-    "directionVideo": "🎬 Cara Menemukan Kami",
-    "watchVideo": "Tonton Video"
+    "howToFindUs": "Cara Menemukan Kami",
+    "watchVideo": "🎥 Tonton Video",
+    "viewMap": "🗺️ Lihat Peta",
+    "mapTitle": "Casa Golden - Panduan Lokasi",
+    "mapPopup": {
+      "name": {
+        "casaGolden": "Casa Golden",
+        "subwayOut": "Pintu Keluar Kereta Bandara 7",
+        "airportBusStop": "Halte Bus Langsung Bandara",
+        "busStop": "Halte Bus di Depan Akomodasi"
+      },
+      "desc": {
+        "casaGolden": "🏠 Akomodasi",
+        "subwayOut": "🚇 5 menit jalan - Kereta (Kereta Bandara·Lini 2)",
+        "airportBusStop": "🚌 8 menit jalan - (Bus No. 6002)",
+        "busStop": "🚌 3 menit jalan - Angkutan lokal"
+      }
+    }
   },
   "facilities": {
     "title": "🏠 Ruang/Fasilitas Tersedia untuk Tamu",

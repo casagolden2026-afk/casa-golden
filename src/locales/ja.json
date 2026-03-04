@@ -11,12 +11,14 @@
   },
   "location": {
     "title": "📍 ロケーション",
-    "hongdaeStation": "弘大入口駅",
+    "hongdaeStation": "🚇 弘大入口駅",
     "hongdaeStationDistance": "徒歩5分",
-    "busStop": "バス停",
+    "busStop": "🚌 宿泊施設前バス停",
     "busStopDistance": "徒歩3分",
-    "airportAccess": "空港アクセス",
-    "airportAccessDesc": "電車/バスで便利",
+    "hongdaeHotplace": "🛍️ 弘大ホットスポット",
+    "hongdaeHotplaceDesc": "韓国の若い文化の中心 ショッピング·カフェ·ナイトライフ",
+    "airportAccess": "✈️ 空港アクセス",
+    "airportAccessDesc": "空港鉄道·バス便利",
     "surroundings": "🏘️ 周辺環境",
     "surroundingsItems": [
       "静かで平和な住宅地に位置",
@@ -40,8 +42,24 @@
       "jamsil": { "name": "蚕室", "time": "約38分", "route": "2号線直行" }
     },
     "highlight": "空港に着いてから1時間で荷物を解く。徒歩5分の弘大メイン通りでレストラン、バー、カフェ、ショッピングなど韓国の若い文化を体験しながら、コーヒー一杯の余裕を楽しめる完璧な旅の避難所になるでしょう。",
-    "directionVideo": "🎬 行き方",
-    "watchVideo": "ビデオを見る"
+    "howToFindUs": "行き方",
+    "watchVideo": "🎥 ビデオを見る",
+    "viewMap": "🗺️ 地図を表示",
+    "mapTitle": "Casa Golden - ロケーション案内",
+    "mapPopup": {
+      "name": {
+        "casaGolden": "Casa Golden",
+        "subwayOut": "空港鉄道7番出口",
+        "airportBusStop": "空港直行バス停",
+        "busStop": "宿泊施設前バス停"
+      },
+      "desc": {
+        "casaGolden": "🏠 宿泊施設",
+        "subwayOut": "🚇 徒歩5分 - 地下鉄(空港鉄道·2号線)",
+        "airportBusStop": "🚌 徒歩8分 - (6002番バス)",
+        "busStop": "🚌 徒歩3分 - 近郊交通"
+      }
+    }
   },
   "facilities": {
     "title": "🏠 ゲスト利用可能なスペース/施設",

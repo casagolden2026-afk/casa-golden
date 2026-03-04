@@ -11,12 +11,14 @@
   },
   "location": {
     "title": "📍 위치",
-    "hongdaeStation": "홍대입구역",
+    "hongdaeStation": "🚇 홍대입구역",
     "hongdaeStationDistance": "도보 5분",
-    "busStop": "버스정류장",
+    "busStop": "🚌 숙소 앞 버스정류장",
     "busStopDistance": "도보 3분",
-    "airportAccess": "공항 접근",
-    "airportAccessDesc": "철도/버스 이용 편리",
+    "hongdaeHotplace": "🛍️ 홍대 핫플레이스",
+    "hongdaeHotplaceDesc": "한국 젊음 문화의 중심 쇼핑·카페·나이트라이프",
+    "airportAccess": "✈️ 공항 접근",
+    "airportAccessDesc": "공항철도·버스 이용 편리",
     "surroundings": "🏘️ 주변환경",
     "surroundingsItems": [
       "조용하고 평화로운 주택가에 위치",
@@ -40,8 +42,24 @@
       "jamsil": { "name": "잠실", "time": "약 38분", "route": "2호선 직행" }
     },
     "highlight": "공항에서 내린 지 1시간 만에 짐을 풀고, 도보 5분 거리의 홍대 메인거리에서 맛집, 술집, 카페, 쇼핑 등 한국의 젊은 문화를 체험하며 커피 한 잔의 여유를 즐길 수 있는 완벽한 여행의 안식처가 될 거예요.",
-    "directionVideo": "🎬 오시는 길",
-    "watchVideo": "영상 보기"
+    "howToFindUs": "오시는 길",
+    "watchVideo": "🎥 영상 보기",
+    "viewMap": "🗺️ 지도 보기",
+    "mapTitle": "Casa Golden - 위치 안내",
+    "mapPopup": {
+      "name": {
+        "casaGolden": "Casa-Golden",
+        "subwayOut": "공항철도 7번 출구",
+        "airportBusStop": "공항 직행 버스 정류장",
+        "busStop": "숙소 앞 버스정류장"
+      },
+      "desc": {
+        "casaGolden": "🏠 숙소 위치",
+        "subwayOut": "🚇 도보 5분 - 지하철(전철): 공항철도·2호선",
+        "airportBusStop": "🚌 도보 8분 - (6002번 버스)",
+        "busStop": "🚌 도보 3분 - 근교 이동"
+      }
+    }
   },
   "facilities": {
     "title": "🏠 게스트 이용 가능 공간/시설",

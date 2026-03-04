@@ -7,6 +7,7 @@ import 'yet-another-react-lightbox/styles.css'
 import { LanguageModal } from './components/LanguageModal'
 import { RoomGallery } from './components/RoomGallery'
 import { VideoModal } from './components/VideoModal'
+import { MapModal } from './components/MapModal'
 import { HeroSection } from './components/HeroSection'
 import { imageData } from './data/imageData.ts'
 
@@ -16,6 +17,7 @@ function App() {
   const [currentIndex, setCurrentIndex] = useState(0)
   const [isLanguageModalOpen, setIsLanguageModalOpen] = useState(false)
   const [isVideoModalOpen, setIsVideoModalOpen] = useState(false)
+  const [isMapModalOpen, setIsMapModalOpen] = useState(false)
   const [imageLoadStatus, setImageLoadStatus] = useState<Record<string, boolean>>({})
   const observerRef = useRef<IntersectionObserver | null>(null)
 
@@ -183,6 +185,12 @@ function App() {
         videoSrc={getCurrentVideoUrl()}
       />
 
+      {/* Map Modal */}
+      <MapModal
+        isOpen={isMapModalOpen}
+        onClose={() => setIsMapModalOpen(false)}
+      />
+
       {/* Hero Section */}
       <HeroSection />
 
@@ -195,13 +203,21 @@ function App() {
 
           {/* Direction Video Section */}
           <div className="video-section">
-            <h3>{t('location.directionVideo')}</h3>
-            <button
-                className="video-button"
-                onClick={() => setIsVideoModalOpen(true)}
-            >
-              {t('location.watchVideo')}
-            </button>
+            <h3>{t('location.howToFindUs')}</h3>
+            <div className="action-buttons-container">
+              <button
+                  className="action-button"
+                  onClick={() => setIsVideoModalOpen(true)}
+              >
+                {t('location.watchVideo')}
+              </button>
+              <button
+                  className="action-button"
+                  onClick={() => setIsMapModalOpen(true)}
+              >
+                {t('location.viewMap')}
+              </button>
+            </div>
           </div>
 
           <div className="info-grid">
@@ -212,6 +228,10 @@ function App() {
             <div className="info-item">
               <strong>{t('location.busStop')}</strong>
               <p>{t('location.busStopDistance')}</p>
+            </div>
+            <div className="info-item">
+              <strong>{t('location.hongdaeHotplace')}</strong>
+              <p>{t('location.hongdaeHotplaceDesc')}</p>
             </div>
             <div className="info-item">
               <strong>{t('location.airportAccess')}</strong>
