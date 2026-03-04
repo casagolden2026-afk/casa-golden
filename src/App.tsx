@@ -12,48 +12,48 @@ function App() {
   // 각 방별 이미지 데이터
   const galleryData = {
     room1: [
-      { src: '/casa-golden/image/room_1_01.png', alt: 'Room 1 - 1' },
-      { src: '/casa-golden/image/room_1_02.png', alt: 'Room 1 - 2' },
-      { src: '/casa-golden/image/room_1_03.png', alt: 'Room 1 - 3' },
-      { src: '/casa-golden/image/room_1_04.png', alt: 'Room 1 - 4' },
+      { src: '/casa-golden/image/room_1_01.png', alt: '침실 1 - 1' },
+      { src: '/casa-golden/image/room_1_02.png', alt: '침실 1 - 2' },
+      { src: '/casa-golden/image/room_1_03.png', alt: '침실 1 - 3' },
+      { src: '/casa-golden/image/room_1_04.png', alt: '침실 1 - 4' },
     ],
     room2: [
-      { src: '/casa-golden/image/room_2_01.png', alt: 'Room 2 - 1' },
-      { src: '/casa-golden/image/room_2_02.jpg', alt: 'Room 2 - 2' },
-      { src: '/casa-golden/image/room_2_03.jpg', alt: 'Room 2 - 3' },
-      { src: '/casa-golden/image/room_2_04.png', alt: 'Room 2 - 4' },
+      { src: '/casa-golden/image/room_2_01.png', alt: '침실 2 - 1' },
+      { src: '/casa-golden/image/room_2_02.jpg', alt: '침실 2 - 2' },
+      { src: '/casa-golden/image/room_2_03.jpg', alt: '침실 2 - 3' },
+      { src: '/casa-golden/image/room_2_04.png', alt: '침실 2 - 4' },
     ],
     living: [
-      { src: '/casa-golden/image/living_room_01.png', alt: 'Living Room - 1' },
-      { src: '/casa-golden/image/living_room_02.png', alt: 'Living Room - 2' },
-      { src: '/casa-golden/image/living_room_03.jpg', alt: 'Living Room - 3' },
-      { src: '/casa-golden/image/living_room_04.jpg', alt: 'Living Room - 4' },
-      { src: '/casa-golden/image/living_room_05.jpg', alt: 'Living Room - 5' },
+      { src: '/casa-golden/image/living_room_01.png', alt: '거실 - 1' },
+      { src: '/casa-golden/image/living_room_02.png', alt: '거실 - 2' },
+      { src: '/casa-golden/image/living_room_03.jpg', alt: '거실 - 3' },
+      { src: '/casa-golden/image/living_room_04.jpg', alt: '거실 - 4' },
+      { src: '/casa-golden/image/living_room_05.jpg', alt: '거실 - 5' },
     ],
     kitchen: [
-      { src: '/casa-golden/image/kitchen_01.jpg', alt: 'Kitchen - 1' },
-      { src: '/casa-golden/image/kitchen_02.jpg', alt: 'Kitchen - 2' },
-      { src: '/casa-golden/image/kitchen_03.jpg', alt: 'Kitchen - 3' },
-      { src: '/casa-golden/image/kitchen_04.jpg', alt: 'Kitchen - 4' },
-      { src: '/casa-golden/image/kitchen_05.jpg', alt: 'Kitchen - 5' },
-      { src: '/casa-golden/image/kitchen_06.jpg', alt: 'Kitchen - 6' },
-      { src: '/casa-golden/image/kitchen_07.jpg', alt: 'Kitchen - 7' },
-      { src: '/casa-golden/image/kitchen_08.jpg', alt: 'Kitchen - 8' },
+      { src: '/casa-golden/image/kitchen_01.jpg', alt: '주방 - 1' },
+      { src: '/casa-golden/image/kitchen_02.jpg', alt: '주방 - 2' },
+      { src: '/casa-golden/image/kitchen_03.jpg', alt: '주방 - 3' },
+      { src: '/casa-golden/image/kitchen_04.jpg', alt: '주방 - 4' },
+      { src: '/casa-golden/image/kitchen_05.jpg', alt: '주방 - 5' },
+      { src: '/casa-golden/image/kitchen_06.jpg', alt: '주방 - 6' },
+      { src: '/casa-golden/image/kitchen_07.jpg', alt: '주방 - 7' },
+      { src: '/casa-golden/image/kitchen_08.jpg', alt: '주방 - 8' },
     ],
     bathroom: [
-      { src: '/casa-golden/image/bathroom_01.jpg', alt: 'Bathroom - 1' },
-      { src: '/casa-golden/image/bathroom_02.jpg', alt: 'Bathroom - 2' },
-      { src: '/casa-golden/image/bathroom_03.jpg', alt: 'Bathroom - 3' },
+      { src: '/casa-golden/image/bathroom_01.jpg', alt: '욕실 - 1' },
+      { src: '/casa-golden/image/bathroom_02.jpg', alt: '욕실 - 2' },
+      { src: '/casa-golden/image/bathroom_03.jpg', alt: '욕실 - 3' },
     ],
     utility: [
-      { src: '/casa-golden/image/utility_room_01.jpg', alt: 'Utility Room - 1' },
-      { src: '/casa-golden/image/utility_room_02.jpg', alt: 'Utility Room - 2' },
-      { src: '/casa-golden/image/utility_room_03.jpg', alt: 'Utility Room - 3' },
+      { src: '/casa-golden/image/utility_room_01.jpg', alt: '세탁실 - 1' },
+      { src: '/casa-golden/image/utility_room_02.jpg', alt: '세탁실 - 2' },
+      { src: '/casa-golden/image/utility_room_03.jpg', alt: '세탁실 - 3' },
     ],
     outdoor: [
-      { src: '/casa-golden/image/outdoor_view.jpg', alt: 'Outdoor - 전경' },
-      { src: '/casa-golden/image/outdoor_building.png', alt: 'Outdoor - 건물' },
-      { src: '/casa-golden/image/outdoor_elevator.png', alt: 'Outdoor - 엘레베이터' },
+      { src: '/casa-golden/image/outdoor_view.jpg', alt: '외부 - 전경' },
+      { src: '/casa-golden/image/outdoor_building.png', alt: '외부 - 건물' },
+      { src: '/casa-golden/image/outdoor_elevator.png', alt: '외부 - 엘레베이터' },
     ],
   }
 
@@ -131,7 +131,7 @@ function App() {
       <section className="hero" id="home">
         <div className="hero-content">
           <h1>Casa Golden</h1>
-          <p className="hero-tagline">New Open (March 2026) | Newly Built (2024)</p>
+          <p className="hero-tagline">New Open (2026년 3월) | 신축 (2024년)</p>
           <p className="hero-description">따뜻하고 편안한 Casa-Golden이 마음에 드실거에요.(●'◡'●)</p>
         </div>
       </section>
@@ -258,7 +258,7 @@ function App() {
           </div>
 
           <div className="room-card">
-            <h3>🪟️ Room 1</h3>
+            <h3>🪟️ 침실 1</h3>
             <div className="room-gallery">
               {galleryData.room1.map((image, index) => (
                 <img
@@ -275,12 +275,12 @@ function App() {
               <li>헤어드라이기 &amp; 고데기</li>
               <li>원형거울 &amp; 화장대 &amp; 의자</li>
               <li>탁상조명</li>
-              <li>Power strip (Extension cord)</li>
+              <li>멀티탭 (연장코드)</li>
             </ul>
           </div>
 
           <div className="room-card">
-            <h3>🛏 Room 2</h3>
+            <h3>🛏 침실 2</h3>
             <div className="room-gallery">
               {galleryData.room2.map((image, index) => (
                 <img
@@ -300,12 +300,12 @@ function App() {
               <li>선풍기</li>
               <li>보드게임</li>
               <li>구급함</li>
-              <li>Power strip (Extension cord)</li>
+              <li>멀티탭 (연장코드)</li>
             </ul>
           </div>
 
           <div className="room-card">
-            <h3>✨ Living Room</h3>
+            <h3>✨ 거실</h3>
             <div className="room-gallery">
               {galleryData.living.map((image, index) => (
                 <img
@@ -318,19 +318,19 @@ function App() {
               ))}
             </div>
             <ul className="amenities-list">
-              <li>바닥용 퀸 사이즈 매트리스 1개와 이불 (Room 2의 옷장안에 구비)</li>
-              <li>50-inch 스마트 TV</li>
+              <li>바닥용 퀸 사이즈 매트리스 1개와 이불 (침실 2의 옷장안에 구비)</li>
+              <li>50인치 스마트 TV</li>
               <li>에어컨</li>
-              <li>넓은 쇼파</li>
+              <li>넓은 소파</li>
               <li>접이식 좌식 커피 테이블</li>
               <li>8층 통창 서울 시티 뷰</li>
-              <li>Full-length mirror</li>
-              <li>Free WiFi</li>
+              <li>전신거울</li>
+              <li>무료 WiFi</li>
             </ul>
           </div>
 
           <div className="room-card">
-            <h3>🍳 Kitchen</h3>
+            <h3>🍳 주방</h3>
             <div className="room-gallery">
               {galleryData.kitchen.map((image, index) => (
                 <img
@@ -352,7 +352,7 @@ function App() {
           </div>
 
           <div className="room-card">
-            <h3>🛁 Bathroom</h3>
+            <h3>🛁 욕실</h3>
             <div className="room-gallery">
               {galleryData.bathroom.map((image, index) => (
                 <img
@@ -371,7 +371,7 @@ function App() {
           </div>
 
           <div className="room-card">
-            <h3>🧺 Utility Room</h3>
+            <h3>🧺 세탁실</h3>
             <div className="room-gallery">
               {galleryData.utility.map((image, index) => (
                 <img
@@ -393,7 +393,7 @@ function App() {
           </div>
 
           <div className="room-card">
-            <h3>🏢 Outdoor</h3>
+            <h3>🏢 건물/외부</h3>
             <div className="room-gallery">
               {galleryData.outdoor.map((image, index) => (
                 <img
