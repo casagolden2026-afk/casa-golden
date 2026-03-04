@@ -1,16 +1,19 @@
 import './App.css'
 import { Link as ScrollLink } from 'react-scroll'
-import { useState } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { useTranslation } from 'react-i18next'
 import Lightbox from 'yet-another-react-lightbox'
 import 'yet-another-react-lightbox/styles.css'
 import { LanguageModal } from './components/LanguageModal'
+import { RoomGallery } from './components/RoomGallery'
 
 function App() {
   const { t, i18n } = useTranslation()
   const [currentGallery, setCurrentGallery] = useState<string | null>(null)
   const [currentIndex, setCurrentIndex] = useState(0)
   const [isLanguageModalOpen, setIsLanguageModalOpen] = useState(false)
+  const [imageLoadStatus, setImageLoadStatus] = useState<Record<string, boolean>>({})
+  const observerRef = useRef<IntersectionObserver | null>(null)
 
   // 현재 언어 이모지 반환
   const getLanguageEmoji = () => {
@@ -95,6 +98,45 @@ function App() {
     if (!currentGallery) return []
     return galleryData[currentGallery as keyof typeof galleryData] || []
   }
+
+  // 이미지 로딩 완료 처리
+  const handleImageLoad = (imageSrc: string) => {
+    setImageLoadStatus(prev => ({
+      ...prev,
+      [imageSrc]: true,
+    }))
+  }
+
+  // 이미지 로딩 실패 처리
+  const handleImageError = (imageSrc: string) => {
+    setImageLoadStatus(prev => ({
+      ...prev,
+      [imageSrc]: false,
+    }))
+  }
+
+  // Intersection Observer 설정 (Lazy Loading 처리)
+  useEffect(() => {
+    observerRef.current = new IntersectionObserver(
+      (entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting && entry.target instanceof HTMLImageElement) {
+            const img = entry.target as HTMLImageElement
+            if (img.dataset.src && !img.src) {
+              img.src = img.dataset.src
+              img.loading = 'lazy'
+              observerRef.current?.unobserve(img)
+            }
+          }
+        })
+      },
+      { rootMargin: '50px' }
+    )
+
+    return () => {
+      observerRef.current?.disconnect()
+    }
+  }, [])
 
   const SCROLL_OFFSET = -60
   const SCROLL_DURATION = 150
@@ -250,17 +292,14 @@ function App() {
           {/* Bedroom 1 */}
           <div className="room-card">
             <h3>{t('facilities.bedroom1.title')}</h3>
-            <div className="room-gallery">
-              {galleryData.room1.map((image, index) => (
-                <img
-                  key={index}
-                  src={image.src}
-                  alt={image.alt}
-                  className="room-gallery-thumb"
-                  onClick={() => openGallery('room1', index)}
-                />
-              ))}
-            </div>
+            <RoomGallery
+              images={galleryData.room1}
+              imageLoadStatus={imageLoadStatus}
+              onImageLoad={handleImageLoad}
+              onImageError={handleImageError}
+              onImageClick={(index) => openGallery('room1', index)}
+              observerRef={observerRef}
+            />
             <ul className="amenities-list">
               {(t('facilities.bedroom1.items', { returnObjects: true }) as string[]).map((item: string, index: number) => (
                 <li key={index}>{item}</li>
@@ -271,17 +310,14 @@ function App() {
           {/* Bedroom 2 */}
           <div className="room-card">
             <h3>{t('facilities.bedroom2.title')}</h3>
-            <div className="room-gallery">
-              {galleryData.room2.map((image, index) => (
-                <img
-                  key={index}
-                  src={image.src}
-                  alt={image.alt}
-                  className="room-gallery-thumb"
-                  onClick={() => openGallery('room2', index)}
-                />
-              ))}
-            </div>
+            <RoomGallery
+              images={galleryData.room2}
+              imageLoadStatus={imageLoadStatus}
+              onImageLoad={handleImageLoad}
+              onImageError={handleImageError}
+              onImageClick={(index) => openGallery('room2', index)}
+              observerRef={observerRef}
+            />
             <ul className="amenities-list">
               {(t('facilities.bedroom2.items', { returnObjects: true }) as string[]).map((item: string, index: number) => (
                 <li key={index}>{item}</li>
@@ -292,17 +328,14 @@ function App() {
           {/* Living Room */}
           <div className="room-card">
             <h3>{t('facilities.living.title')}</h3>
-            <div className="room-gallery">
-              {galleryData.living.map((image, index) => (
-                <img
-                  key={index}
-                  src={image.src}
-                  alt={image.alt}
-                  className="room-gallery-thumb"
-                  onClick={() => openGallery('living', index)}
-                />
-              ))}
-            </div>
+            <RoomGallery
+              images={galleryData.living}
+              imageLoadStatus={imageLoadStatus}
+              onImageLoad={handleImageLoad}
+              onImageError={handleImageError}
+              onImageClick={(index) => openGallery('living', index)}
+              observerRef={observerRef}
+            />
             <ul className="amenities-list">
               {(t('facilities.living.items', { returnObjects: true }) as string[]).map((item: string, index: number) => (
                 <li key={index}>{item}</li>
@@ -313,17 +346,14 @@ function App() {
           {/* Kitchen */}
           <div className="room-card">
             <h3>{t('facilities.kitchen.title')}</h3>
-            <div className="room-gallery">
-              {galleryData.kitchen.map((image, index) => (
-                <img
-                  key={index}
-                  src={image.src}
-                  alt={image.alt}
-                  className="room-gallery-thumb"
-                  onClick={() => openGallery('kitchen', index)}
-                />
-              ))}
-            </div>
+            <RoomGallery
+              images={galleryData.kitchen}
+              imageLoadStatus={imageLoadStatus}
+              onImageLoad={handleImageLoad}
+              onImageError={handleImageError}
+              onImageClick={(index) => openGallery('kitchen', index)}
+              observerRef={observerRef}
+            />
             <ul className="amenities-list">
               {(t('facilities.kitchen.items', { returnObjects: true }) as string[]).map((item: string, index: number) => (
                 <li key={index}>{item}</li>
@@ -334,17 +364,14 @@ function App() {
           {/* Bathroom */}
           <div className="room-card">
             <h3>{t('facilities.bathroom.title')}</h3>
-            <div className="room-gallery">
-              {galleryData.bathroom.map((image, index) => (
-                <img
-                  key={index}
-                  src={image.src}
-                  alt={image.alt}
-                  className="room-gallery-thumb"
-                  onClick={() => openGallery('bathroom', index)}
-                />
-              ))}
-            </div>
+            <RoomGallery
+              images={galleryData.bathroom}
+              imageLoadStatus={imageLoadStatus}
+              onImageLoad={handleImageLoad}
+              onImageError={handleImageError}
+              onImageClick={(index) => openGallery('bathroom', index)}
+              observerRef={observerRef}
+            />
             <ul className="amenities-list">
               {(t('facilities.bathroom.items', { returnObjects: true }) as string[]).map((item: string, index: number) => (
                 <li key={index}>{item}</li>
@@ -355,17 +382,14 @@ function App() {
           {/* Utility Room */}
           <div className="room-card">
             <h3>{t('facilities.utility.title')}</h3>
-            <div className="room-gallery">
-              {galleryData.utility.map((image, index) => (
-                <img
-                  key={index}
-                  src={image.src}
-                  alt={image.alt}
-                  className="room-gallery-thumb"
-                  onClick={() => openGallery('utility', index)}
-                />
-              ))}
-            </div>
+            <RoomGallery
+              images={galleryData.utility}
+              imageLoadStatus={imageLoadStatus}
+              onImageLoad={handleImageLoad}
+              onImageError={handleImageError}
+              onImageClick={(index) => openGallery('utility', index)}
+              observerRef={observerRef}
+            />
             <ul className="amenities-list">
               {(t('facilities.utility.items', { returnObjects: true }) as string[]).map((item: string, index: number) => (
                 <li key={index}>{item}</li>
@@ -376,17 +400,14 @@ function App() {
           {/* Outdoor */}
           <div className="room-card">
             <h3>{t('facilities.outdoor.title')}</h3>
-            <div className="room-gallery">
-              {galleryData.outdoor.map((image, index) => (
-                <img
-                  key={index}
-                  src={image.src}
-                  alt={image.alt}
-                  className="room-gallery-thumb"
-                  onClick={() => openGallery('outdoor', index)}
-                />
-              ))}
-            </div>
+            <RoomGallery
+              images={galleryData.outdoor}
+              imageLoadStatus={imageLoadStatus}
+              onImageLoad={handleImageLoad}
+              onImageError={handleImageError}
+              onImageClick={(index) => openGallery('outdoor', index)}
+              observerRef={observerRef}
+            />
             <ul className="amenities-list">
               {(t('facilities.outdoor.items', { returnObjects: true }) as string[]).map((item: string, index: number) => (
                 <li key={index}>{item}</li>

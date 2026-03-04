@@ -1,0 +1,26 @@
+/* Room Gallery Grid */
+.room-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 0.8rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Responsive: Tablet (768px and below) */
+@media (max-width: 768px) {
+  .room-gallery {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 0.6rem;
+    margin-bottom: 1rem;
+  }
+}
+
+/* Responsive: Mobile (480px and below) */
+@media (max-width: 480px) {
+  .room-gallery {
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+}
+

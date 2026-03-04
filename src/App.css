@@ -466,28 +466,6 @@ body {
 }
 
 /* Room Gallery */
-.room-gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-  gap: 0.8rem;
-  margin-bottom: 1.5rem;
-}
-
-.room-gallery-thumb {
-  width: 100%;
-  height: 120px;
-  object-fit: cover;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border: 2px solid transparent;
-}
-
-.room-gallery-thumb:hover {
-  transform: scale(1.05);
-  box-shadow: 0 4px 12px rgba(244, 196, 48, 0.3);
-  border-color: #F4C430;
-}
 
 /* CTA Container */
 .cta-container {
@@ -719,16 +697,6 @@ body {
     font-size: 1.1rem;
   }
 
-  .room-gallery {
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-    gap: 0.6rem;
-    margin-bottom: 1rem;
-  }
-
-  .room-gallery-thumb {
-    height: 100px;
-  }
-
   .amenities-list li {
     font-size: 0.9rem;
     padding: 0.5rem 0;
@@ -900,15 +868,6 @@ body {
     margin-bottom: 0.8rem;
   }
 
-  .room-gallery {
-    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
-    gap: 0.5rem;
-    margin-bottom: 1rem;
-  }
-
-  .room-gallery-thumb {
-    height: 80px;
-  }
 
   .amenities-list li {
     font-size: 0.85rem;
