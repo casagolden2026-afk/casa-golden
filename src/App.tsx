@@ -45,7 +45,7 @@ function App() {
       case 'zh-CN':
         return '🇨🇳'
       case 'zh-TW':
-        return '🇹🇼'
+        return '🇹🇼·🇭🇰'
       case 'id':
         return '🇮🇩'
       case 'es':

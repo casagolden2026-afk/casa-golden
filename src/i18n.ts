@@ -9,6 +9,10 @@ import id from './locales/id.json'
 import es from './locales/es.json'
 
 // 지원하는 언어 목록
+// en: 영국(en-GB), 캐나다(en-CA), 호주(en-AU), 미국(en-US) 등
+// es: 스페인(es-ES), 멕시코(es-MX), 아르헨티나(es-AR) 등 남미 국가
+// zh-CN: 중국(zh-CN), 싱가포르(zh-SG) 등 간체 중국어 지역
+// zh-TW: 대만(zh-TW), 홍콩(zh-HK), 마카오(zh-MO) 등 번체 중국어 지역
 const SUPPORTED_LANGUAGES = {
   ko: 'ko',
   en: 'en',
@@ -21,27 +25,34 @@ const SUPPORTED_LANGUAGES = {
 
 // 브라우저의 기본 언어 감지
 const detectBrowserLanguage = (): string => {
-  // 1. 정확한 일치 확인
-  if (navigator.language in SUPPORTED_LANGUAGES) {
-    return navigator.language as keyof typeof SUPPORTED_LANGUAGES as string
+  const browserLang = navigator.language
+
+  // 1. 정확한 일치 확인 (예: ko, en, ja)
+  if (browserLang in SUPPORTED_LANGUAGES) {
+    return browserLang as keyof typeof SUPPORTED_LANGUAGES as string
   }
 
-  // 2. 언어 코드로 시작하는지 확인 (예: en-US -> en)
-  const browserLangBase = navigator.language.split('-')[0]
+  // 2. 특수 케이스: 중국어 번체/간체 지역별 매핑
+  // 대만(zh-TW), 홍콩(zh-HK), 마카오(zh-MO) -> 번체 중국어
+  // 중국 및 싱가포르(zh-SG) -> 간체 중국어
+  if (browserLang.startsWith('zh')) {
+    const traditionalRegions = ['TW', 'HK', 'MO']
+    const regionCode = browserLang.split('-')[1]?.toUpperCase()
+
+    if (traditionalRegions.includes(regionCode) || browserLang.startsWith('zh-Hant')) {
+      return 'zh-TW'
+    }
+    return 'zh-CN'
+  }
+
+  // 3. 언어 코드로 시작하는지 확인 (예: en-US -> en, en-GB -> en, es-MX -> es)
+  const browserLangBase = browserLang.split('-')[0]
   for (const [lang] of Object.entries(SUPPORTED_LANGUAGES)) {
     if (lang.split('-')[0] === browserLangBase) {
       return lang
     }
   }
 
-  // 3. 특수 케이스: 중국어 번체/간체
-  if (navigator.language.startsWith('zh')) {
-    // navigator.language가 zh-TW 또는 zhant* 형태면 번체, 나머지는 간체
-    if (navigator.language === 'zh-TW' || navigator.language.startsWith('zh-Hant')) {
-      return 'zh-TW'
-    }
-    return 'zh-CN'
-  }
 
   // 4. 기본값: 영어
   return 'en'

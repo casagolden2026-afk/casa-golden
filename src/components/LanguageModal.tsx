@@ -11,10 +11,10 @@ export function LanguageModal({ isOpen, onClose }: LanguageModalProps) {
 
   const languages = [
     { code: 'ko', label: t('modal.korean'), emoji: '🇰🇷' },
-    { code: 'en', label: t('modal.english'), emoji: '🇺🇸' },
-    { code: 'ja', label: t('modal.japanese'), emoji: '🇯🇵' },
     { code: 'zh-CN', label: t('modal.chineseSimplified'), emoji: '🇨🇳' },
-    { code: 'zh-TW', label: t('modal.chineseTraditional'), emoji: '🇹🇼' },
+    { code: 'zh-TW', label: t('modal.chineseTraditional'), emoji: '🇹🇼·🇭🇰' },
+    { code: 'ja', label: t('modal.japanese'), emoji: '🇯🇵' },
+    { code: 'en', label: t('modal.english'), emoji: '🇺🇸' },
     { code: 'id', label: t('modal.indonesian'), emoji: '🇮🇩' },
     { code: 'es', label: t('modal.spanish'), emoji: '🇪🇸' },
   ]
