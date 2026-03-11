@@ -12,6 +12,7 @@ import { MapModal } from './components/MapModal'
 import { HeroSection } from './components/HeroSection'
 import { GuestGuideButton } from './components/GuestGuideButton'
 import { imageData } from './data/imageData.ts'
+import type { DestinationInfo } from './types/destinationInfo'
 
 function App() {
   const { t, i18n } = useTranslation()
@@ -210,8 +211,9 @@ function App() {
             <h3>{t('location.subway')}</h3>
             <p className="subway-intro">{t('location.subwayIntro')}</p>
             <div className="subway-grid">
-              {Object.entries(t('location.destinations', { returnObjects: true }) as Record<string, any>).map(
-                ([key, dest]: [string, any]) => (
+              {Object.entries(
+                t('location.destinations', { returnObjects: true }) as Record<string, DestinationInfo>,
+              ).map(([key, dest]) => (
                   <div key={key} className="subway-item">
                     <strong>{dest.name}</strong>
                     <span>{dest.time}</span>
@@ -388,7 +390,7 @@ function App() {
               {t('footer.inquiry')} <a href="https://airbnb.com/h/casa-golden" target="_blank" rel="noopener noreferrer">https://airbnb.com/h/casa-golden</a>
             </p>
           </div>
-          <button className="cta-button" onClick={() => window.location.href = 'https://airbnb.com/h/casa-golden'}>
+          <button className="cta-button footer-cta-button" onClick={() => window.location.href = 'https://airbnb.com/h/casa-golden'}>
             {t('footer.bookNow')}
           </button>
         </div>
@@ -398,7 +400,7 @@ function App() {
       {currentGallery && (
         <Lightbox
           slides={getCurrentImages()}
-          open={currentGallery !== null}
+          open
           index={currentIndex}
           close={closeGallery}
           on={{

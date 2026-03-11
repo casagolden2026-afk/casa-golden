@@ -8,6 +8,7 @@
   align-items: center;
   justify-content: center;
   padding-bottom: 0;
+  overflow: hidden;
 }
 
 /* Hero Slider Container */
@@ -21,9 +22,11 @@
   align-items: center;
   justify-content: center;
   cursor: grab;
+  user-select: none;
+  touch-action: pan-y;
 }
 
-.hero-slider:active {
+.hero-slider.dragging {
   cursor: grabbing;
 }
 
@@ -32,24 +35,23 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  display: flex;
   height: 100%;
+  will-change: transform;
+}
+
+.hero-slider-images.animating {
+  transition: transform 0.45s ease;
 }
 
 .hero-slider-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
+  display: block;
   height: 100%;
   object-fit: cover;
-  opacity: 0;
-  transition: opacity 0.8s ease-in-out;
   user-select: none;
-}
-
-.hero-slider-image.active {
-  opacity: 1;
+  pointer-events: none;
+  flex-shrink: 0;
+  -webkit-user-drag: none;
 }
 
 /* 콘텐츠 오버레이 */
@@ -196,4 +198,3 @@
     height: 8px;
   }
 }
-

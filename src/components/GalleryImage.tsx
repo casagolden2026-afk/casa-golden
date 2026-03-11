@@ -23,13 +23,16 @@ export const GalleryImage: React.FC<GalleryImageProps> = ({
   const imgRef = useRef<HTMLImageElement>(null)
 
   useEffect(() => {
-    if (imgRef.current && observerRef.current) {
-      observerRef.current.observe(imgRef.current)
+    const imageElement = imgRef.current
+    const observer = observerRef.current
+
+    if (imageElement && observer) {
+      observer.observe(imageElement)
     }
 
     return () => {
-      if (imgRef.current && observerRef.current) {
-        observerRef.current.unobserve(imgRef.current)
+      if (imageElement && observer) {
+        observer.unobserve(imageElement)
       }
     }
   }, [observerRef])
@@ -50,4 +53,3 @@ export const GalleryImage: React.FC<GalleryImageProps> = ({
     </div>
   )
 }
-

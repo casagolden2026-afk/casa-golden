@@ -436,6 +436,73 @@ body {
   box-shadow: 0 6px 16px rgba(244, 196, 48, 0.4);
 }
 
+@keyframes footerCtaSparkle {
+  0%, 92%, 100% {
+    transform: translateY(0) scale(1);
+    filter: brightness(1);
+    box-shadow: 0 6px 18px rgba(244, 196, 48, 0.34);
+  }
+
+  94% {
+    transform: translateY(-1px) scale(1.03);
+    filter: brightness(1.08);
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.18), 0 10px 24px rgba(244, 196, 48, 0.5);
+  }
+
+  96% {
+    transform: translateY(-2px) scale(1.06);
+    filter: brightness(1.16);
+    box-shadow: 0 0 0 6px rgba(255, 255, 255, 0.12), 0 14px 30px rgba(244, 196, 48, 0.62);
+  }
+
+  98% {
+    transform: translateY(-1px) scale(1.03);
+    filter: brightness(1.08);
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.14), 0 10px 24px rgba(244, 196, 48, 0.48);
+  }
+}
+
+.footer-cta-button {
+  position: relative;
+  overflow: hidden;
+  padding: 0.8rem 2.2rem;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 999px;
+  box-shadow: 0 6px 18px rgba(244, 196, 48, 0.34);
+  animation: footerCtaSparkle 20s ease-in-out infinite;
+}
+
+.footer-cta-button::after {
+  content: '';
+  position: absolute;
+  inset: -20%;
+  background: linear-gradient(120deg, transparent 35%, rgba(255, 255, 255, 0.2) 45%, rgba(255, 255, 255, 0.75) 50%, rgba(255, 255, 255, 0.2) 55%, transparent 65%);
+  transform: translateX(-160%) skewX(-18deg);
+  animation: footerCtaShine 20s ease-in-out infinite;
+  pointer-events: none;
+}
+
+@keyframes footerCtaShine {
+  0%, 92%, 100% {
+    transform: translateX(-160%) skewX(-18deg);
+    opacity: 0;
+  }
+
+  94% {
+    opacity: 0.35;
+  }
+
+  96% {
+    transform: translateX(160%) skewX(-18deg);
+    opacity: 0.85;
+  }
+
+  98% {
+    opacity: 0;
+  }
+}
+
 /* Footer */
 .footer {
   background: linear-gradient(135deg, #101010 0%, #303030 100%);
@@ -485,6 +552,11 @@ body {
 .footer .cta-button {
   padding: 0.6rem 1.8rem;
   font-size: 0.8rem;
+}
+
+.footer .footer-cta-button {
+  padding: 0.8rem 2.2rem;
+  font-size: 1rem;
 }
 
 .footer p {
@@ -646,6 +718,11 @@ body {
     padding: 0.6rem 1.8rem;
     font-size: 0.9rem;
   }
+
+  .footer .footer-cta-button {
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+  }
 }
 
 /* Responsive - 모바일 */
@@ -803,6 +880,23 @@ body {
     padding: 0.5rem 1.2rem;
     font-size: 0.8rem;
     flex: 0 0 auto;
+  }
+
+  .footer .footer-cta-button {
+    padding: 0.72rem 1.5rem;
+    font-size: 1.1rem;
+    letter-spacing: 0.01em;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .footer-cta-button,
+  .footer-cta-button::after {
+    animation: none;
+  }
+
+  .footer-cta-button {
+    transition: none;
   }
 }
 
