@@ -1,0 +1,33 @@
+.language-button {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 0.3rem 0.5rem;
+  transition: all 0.3s ease;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.language-button:hover {
+  background: rgba(244, 196, 48, 0.1);
+  transform: scale(1.1);
+}
+
+/* Responsive - 태블릿 */
+@media (max-width: 768px) {
+  .language-button {
+    font-size: 1.1rem;
+    padding: 0.25rem 0.4rem;
+  }
+}
+
+/* Responsive - 모바일 */
+@media (max-width: 480px) {
+  .language-button {
+    font-size: 1rem;
+    padding: 0.2rem 0.3rem;
+  }
+}

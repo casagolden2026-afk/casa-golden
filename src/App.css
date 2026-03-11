@@ -96,25 +96,6 @@ body {
   border-bottom: 2px solid #F4C430;
 }
 
-/* Language Button */
-.language-button {
-  background: none;
-  border: none;
-  font-size: 1.2rem;
-  cursor: pointer;
-  padding: 0.3rem 0.5rem;
-  transition: all 0.3s ease;
-  border-radius: 4px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.language-button:hover {
-  background: rgba(244, 196, 48, 0.1);
-  transform: scale(1.1);
-}
-
 /* Main Container */
 #root {
   width: 100%;
@@ -540,11 +521,6 @@ body {
     font-size: 0.9rem;
   }
 
-  .language-button {
-    font-size: 1.2rem;
-    padding: 0.3rem 0.5rem;
-  }
-
   .app-container {
     padding-top: 65px;
   }
@@ -587,11 +563,6 @@ body {
 
   .nav-links li {
     font-size: 0.75rem;
-  }
-
-  .language-button {
-    font-size: 1rem;
-    padding: 0.25rem 0.4rem;
   }
 
   .logo-img {
@@ -709,11 +680,6 @@ body {
 
   .nav-links a {
     padding: 0.08rem 0.15rem;
-  }
-
-  .language-button {
-    font-size: 0.9rem;
-    padding: 0.2rem 0.3rem;
   }
 
   .main-content {

@@ -1,13 +1,31 @@
 import { useEffect } from 'react'
 import './VideoModal.css'
+import {useTranslation} from "react-i18next";
 
 interface VideoModalProps {
   isOpen: boolean
   onClose: () => void
-  videoSrc: string
 }
 
-export function VideoModal({ isOpen, onClose, videoSrc }: VideoModalProps) {
+export function VideoModal({ isOpen, onClose }: VideoModalProps) {
+  const { i18n } = useTranslation()
+
+  // 언어별 오시는 길 영상 URL 매핑
+  const videoUrlMap: Record<string, string> = {
+    ko: 'video/CasaGolden_how_to_find_us_ko_480.mp4',
+    en: 'video/CasaGolden_how_to_find_us_en_480.mp4',
+    ja: 'video/CasaGolden_how_to_find_us_jp_480.mp4',
+    'zh-CN': 'video/CasaGolden_how_to_find_us_cn_sc_480.mp4',
+    'zh-TW': 'video/CasaGolden_how_to_find_us_cn_tc_480.mp4',
+    id: 'video/CasaGolden_how_to_find_us_id_480.mp4',
+    es: 'video/CasaGolden_how_to_find_us_es_480.mp4',
+  }
+
+  // 현재 언어에 맞는 영상 URL 반환 (없으면 영어)
+  const getCurrentVideoUrl = () => {
+    return videoUrlMap[i18n.language] || videoUrlMap['en']
+  }
+
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = 'hidden'
@@ -46,7 +64,7 @@ export function VideoModal({ isOpen, onClose, videoSrc }: VideoModalProps) {
           className="video-modal-video"
           controls
           autoPlay
-          src={videoSrc}
+          src={getCurrentVideoUrl()}
         />
       </div>
     </div>

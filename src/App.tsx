@@ -5,6 +5,7 @@ import { useTranslation } from 'react-i18next'
 import Lightbox from 'yet-another-react-lightbox'
 import 'yet-another-react-lightbox/styles.css'
 import { LanguageModal } from './components/LanguageModal'
+import { LanguageButton } from './components/LanguageButton'
 import { RoomGallery } from './components/RoomGallery'
 import { VideoModal } from './components/VideoModal'
 import { MapModal } from './components/MapModal'
@@ -21,45 +22,6 @@ function App() {
   const [isMapModalOpen, setIsMapModalOpen] = useState(false)
   const [imageLoadStatus, setImageLoadStatus] = useState<Record<string, boolean>>({})
   const observerRef = useRef<IntersectionObserver | null>(null)
-
-  // 언어별 오시는 길 영상 URL 매핑
-  const videoUrlMap: Record<string, string> = {
-    ko: 'video/CasaGolden_how_to_find_us_ko_480.mp4',
-    en: 'video/CasaGolden_how_to_find_us_en_480.mp4',
-    ja: 'video/CasaGolden_how_to_find_us_jp_480.mp4',
-    'zh-CN': 'video/CasaGolden_how_to_find_us_cn_sc_480.mp4',
-    'zh-TW': 'video/CasaGolden_how_to_find_us_cn_tc_480.mp4',
-    id: 'video/CasaGolden_how_to_find_us_id_480.mp4',
-    es: 'video/CasaGolden_how_to_find_us_es_480.mp4',
-  }
-
-  // 현재 언어에 맞는 영상 URL 반환 (없으면 영어)
-  const getCurrentVideoUrl = () => {
-    return videoUrlMap[i18n.language] || videoUrlMap['en']
-  }
-
-  // 현재 언어 이모지 반환
-  const getLanguageEmoji = () => {
-    switch (i18n.language) {
-      case 'ko':
-        return '🇰🇷'
-      case 'en':
-        return '🇺🇸'
-      case 'ja':
-        return '🇯🇵'
-      case 'zh-CN':
-        return '🇨🇳'
-      case 'zh-TW':
-        return '🇹🇼·🇭🇰'
-      case 'id':
-        return '🇮🇩'
-      case 'es':
-        return '🇪🇸'
-      default:
-        return '🌐'
-    }
-  }
-
 
   const openGallery = (galleryName: string, index: number = 0) => {
     setCurrentGallery(galleryName)
@@ -166,13 +128,7 @@ function App() {
               </li>
             </ul>
           </nav>
-          <button
-            className="language-button"
-            onClick={() => setIsLanguageModalOpen(true)}
-            title="Change language"
-          >
-            {getLanguageEmoji()}
-          </button>
+          <LanguageButton onClick={() => setIsLanguageModalOpen(true)} />
         </div>
       </header>
 
@@ -183,7 +139,6 @@ function App() {
       <VideoModal
         isOpen={isVideoModalOpen}
         onClose={() => setIsVideoModalOpen(false)}
-        videoSrc={getCurrentVideoUrl()}
       />
 
       {/* Map Modal */}
