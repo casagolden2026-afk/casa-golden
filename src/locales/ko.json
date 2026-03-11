@@ -45,6 +45,7 @@
     "howToFindUs": "오시는 길",
     "watchVideo": "🎥 영상 보기",
     "viewMap": "🗺️ 지도 보기",
+    "guestGuideButton": "게스트 가이드 조회",
     "mapTitle": "Casa Golden - 위치 안내",
     "mapPopup": {
       "name": {
@@ -165,4 +166,3 @@
     "close": "닫기"
   }
 }
-

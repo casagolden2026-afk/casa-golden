@@ -9,6 +9,7 @@ import { RoomGallery } from './components/RoomGallery'
 import { VideoModal } from './components/VideoModal'
 import { MapModal } from './components/MapModal'
 import { HeroSection } from './components/HeroSection'
+import { GuestGuideButton } from './components/GuestGuideButton'
 import { imageData } from './data/imageData.ts'
 
 function App() {
@@ -419,6 +420,7 @@ function App() {
               ))}
             </ul>
           </div>
+          <GuestGuideButton language={i18n.language} />
         </section>
       </main>
 

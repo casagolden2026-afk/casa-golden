@@ -45,7 +45,8 @@
     "howToFindUs": "Cómo Encontrarnos",
     "watchVideo": "🎥 Ver Video",
     "viewMap": "🗺️ Ver Mapa",
-    "mapTitle": "Casa Golden - Guía de Ubicación",
+    "guestGuideButton": "Abrir Guia del Huesped",
+    "mapTitle": "Casa Golden - Guia de ubicacion",
     "mapPopup": {
       "name": {
         "casaGolden": "Casa Golden",
@@ -165,4 +166,3 @@
     "close": "Cerrar"
   }
 }
-

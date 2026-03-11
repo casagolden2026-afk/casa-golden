@@ -45,6 +45,7 @@
     "howToFindUs": "行き方",
     "watchVideo": "🎥 ビデオを見る",
     "viewMap": "🗺️ 地図を表示",
+    "guestGuideButton": "ゲストガイドを見る",
     "mapTitle": "Casa Golden - ロケーション案内",
     "mapPopup": {
       "name": {
@@ -165,4 +166,3 @@
     "close": "閉じる"
   }
 }
-
