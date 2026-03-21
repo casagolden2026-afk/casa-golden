@@ -470,7 +470,7 @@ body {
   font-weight: 700;
   border-radius: 999px;
   box-shadow: 0 6px 18px rgba(244, 196, 48, 0.34);
-  animation: footerCtaSparkle 10s ease-in-out infinite;
+  animation: footerCtaSparkle 7s ease-in-out infinite;
 }
 
 .footer-cta-button::after {
@@ -479,7 +479,7 @@ body {
   inset: -20%;
   background: linear-gradient(120deg, transparent 35%, rgba(255, 255, 255, 0.2) 45%, rgba(255, 255, 255, 0.75) 50%, rgba(255, 255, 255, 0.2) 55%, transparent 65%);
   transform: translateX(-160%) skewX(-18deg);
-  animation: footerCtaShine 10s ease-in-out infinite;
+  animation: footerCtaShine 7s ease-in-out infinite;
   pointer-events: none;
 }
 
