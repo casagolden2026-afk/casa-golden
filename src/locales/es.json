@@ -75,7 +75,10 @@
     "bedding": "🛏️ Composición de ropa de cama",
     "beddingItems": [
       "2 camas tamaño Queen",
-      "1 colchón tipo piso tamaño Queen"
+      "1 colchón tipo piso",
+      "Edredones dobles y sencillos de verano e invierno, a medida💛",
+      "Si deseas un edredón específico, solicítalo al anfitrión antes de tu llegada.",
+      "Topper de colchón para cada cama"
     ],
     "bedroom1": {
       "title": "🪟️ Dormitorio 1",
@@ -103,7 +106,7 @@
     "living": {
       "title": "✨ Sala de estar",
       "items": [
-        "1 colchón tipo piso tamaño Queen con ropa de cama (almacenado en el armario del dormitorio 2)",
+        "1 colchón tipo piso con ropa de cama (almacenado en el armario del dormitorio 2)",
         "Televisor inteligente de 50 pulgadas",
         "Aire acondicionado",
         "Sofá grande",
