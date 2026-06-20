@@ -54,6 +54,8 @@ const createMarkerIcon = (color: string) => {
 
 const START_LAT = 37.558450
 const START_LNG = 126.927672
+const GOOGLE_MAPS_LINK = 'https://maps.app.goo.gl/bEbdFapg1kNwYAek6'
+const GOOGLE_MAPS_ICON = `${import.meta.env.BASE_URL}assets/google-maps-link.svg`
 
 
 // 지도 컨트롤러 컴포넌트 - 선택된 위치로 이동
@@ -170,7 +172,20 @@ export function MapModal({ isOpen, onClose }: MapModalProps) {
           </button>
 
           <div className="map-modal-header">
-            <h2>{t('location.mapTitle') || 'Casa Golden - 위치 안내'}</h2>
+            <div className="map-modal-header-inner">
+              <h2>{t('location.mapTitle') || 'Casa Golden - 위치 안내'}</h2>
+              <a
+                className="map-modal-google-link"
+                href={GOOGLE_MAPS_LINK}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="구글 지도에서 보기"
+                title="구글 지도에서 보기"
+              >
+                <img src={GOOGLE_MAPS_ICON} alt="" aria-hidden="true" />
+                <span className="map-modal-google-link-text">구글 지도에서 보기</span>
+              </a>
+            </div>
           </div>
 
           <div className="map-container-wrapper">
