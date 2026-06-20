@@ -10,6 +10,7 @@ export const heroImageData = [
 // 각 방별 이미지 데이터
 export const imageData = {
   room1: [
+    { src: 'image/room_1_00.webp', alt: 'room1-0' },
     { src: 'image/room_1_01.webp', alt: 'room1-1' },
     { src: 'image/room_1_02.webp', alt: 'room1-2' },
     { src: 'image/room_1_03.webp', alt: 'room1-3' },
@@ -17,6 +18,7 @@ export const imageData = {
     { src: 'image/room_1_05.webp', alt: 'room1-4' },
   ],
   room2: [
+    { src: 'image/room_2_00.webp', alt: 'room2-0' },
     { src: 'image/room_2_01.webp', alt: 'room2-1' },
     { src: 'image/room_2_02.webp', alt: 'room2-2' },
     { src: 'image/room_2_03.webp', alt: 'room2-3' },
@@ -48,6 +50,7 @@ export const imageData = {
     { src: 'image/utility_room_01.webp', alt: 'utility-1' },
     { src: 'image/utility_room_02.webp', alt: 'utility-2' },
     { src: 'image/utility_room_03.webp', alt: 'utility-3' },
+    { src: 'image/utility_room_04.webp', alt: 'utility-4' },
   ],
   outdoor: [
     { src: 'image/outdoor_view.webp', alt: 'outdoor-1' },

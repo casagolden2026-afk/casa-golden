@@ -93,10 +93,10 @@
         "1 Queen-size bed",
         "Large closet",
         "Cloud-shaped mirror",
+        "Air conditioning",
         "Desk lamp",
         "Fan",
         "Board games",
-        "First aid kit",
         "Power strip (extension cord)"
       ]
     },
@@ -131,13 +131,14 @@
       ]
     },
     "utility": {
-      "title": "🧺 Laundry Room",
+      "title": "🧺 Laundry Room & Shoe Cabinet",
       "items": [
         "Washing machine & dryer",
         "Detergent & fabric softener",
         "Drying rack",
         "Recycling bin",
-        "2 Foldable chairs"
+        "2 Foldable chairs",
+        "Shoe cabinet: umbrella, first aid kit, indoor slippers, fire extinguisher, shoe horn"
       ]
     },
     "outdoor": {

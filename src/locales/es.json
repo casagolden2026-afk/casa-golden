@@ -93,10 +93,10 @@
         "1 cama tamaño Queen",
         "Armario grande",
         "Espejo en forma de nube",
+        "Aire acondicionado",
         "Lámpara de escritorio",
         "Ventilador",
         "Juegos de mesa",
-        "Botiquín de primeros auxilios",
         "Regleta (cable de extensión)"
       ]
     },
@@ -131,13 +131,14 @@
       ]
     },
     "utility": {
-      "title": "🧺 Lavandería",
+      "title": "🧺 Lavandería y Zapatero",
       "items": [
         "Lavadora y secadora",
         "Detergente y suavizante de telas",
         "Tendedero",
         "Contenedor de reciclaje",
-        "2 sillas plegables"
+        "2 sillas plegables",
+        "Zapatero: paraguas, botiquín, pantuflas de interior, extintor, calzador"
       ]
     },
     "outdoor": {

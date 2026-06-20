@@ -93,10 +93,10 @@
         "1 tempat tidur Queen-size",
         "Lemari besar",
         "Cermin berbentuk awan",
+        "Pendingin udara",
         "Lampu meja",
         "Kipas angin",
         "Permainan papan",
-        "Kotak P3K",
         "Stop kontak (kabel perpanjang)"
       ]
     },
@@ -131,13 +131,14 @@
       ]
     },
     "utility": {
-      "title": "🧺 Ruang Cuci",
+      "title": "🧺 Ruang Cuci & Lemari Sepatu",
       "items": [
         "Mesin cuci & pengering",
         "Deterjen & pelembut kain",
         "Rak pengeringan",
         "Tempat sampah daur ulang",
-        "2 kursi lipat"
+        "2 kursi lipat",
+        "Lemari sepatu: payung, kotak P3K, sandal dalam ruangan, alat pemadam api, tanduk sepatu"
       ]
     },
     "outdoor": {
